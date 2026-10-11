@@ -1,0 +1,38 @@
+name: Daily official-source review proposals
+on:
+  schedule:
+    - cron: '23 14 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: leverage-source-scan
+  cancel-in-progress: false
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Create unverified source candidates
+        run: python scripts/scan_sources.py
+      - name: Propose changes through a PR; no automatic acceptance
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          if [ -z "$(git status --porcelain -- data/candidates data/monitor/seen.json)" ]; then
+            echo 'No new fingerprints'
+            exit 0
+          fi
+          branch="creeper/auto-source-review-${{ github.run_id }}-${{ github.run_attempt }}"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git switch -c "$branch"
+          git add data/candidates data/monitor/seen.json
+          git commit -m 'chore: propose unverified source fingerprint'
+          git push -u origin "$branch"
+          gh pr create --base main --head "$branch" --title 'Review source fingerprints (unverified)' --body 'Automated page fingerprints, NOT verified opportunity changes. Inspect primary source terms before merging.'

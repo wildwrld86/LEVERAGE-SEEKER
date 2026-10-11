@@ -1,0 +1,24 @@
+{
+  "feed_type": "reviewed_public_observations",
+  "notice": "Published source claims are not founder approvals or current account entitlements.",
+  "opportunities": [
+    {
+      "facts": {
+        "access_note": "Program is free to join; cloud credits are subject to member qualification and terms.",
+        "advertised_credit_usd": 100,
+        "applicant_approval": "not_observed",
+        "membership_cost_usd": 0,
+        "program": "AMD AI Developer Program",
+        "provider": "AMD",
+        "resource_type": "gpu_cloud_credit"
+      },
+      "observation_count": 1,
+      "recorded_at": "2026-10-11T03:57:31Z",
+      "source_sha256": null,
+      "source_url": "https://developer.amd.com/ai-developer-program/",
+      "state": "NEW",
+      "subject_id": "amd-ai-developer-program"
+    }
+  ],
+  "schema_version": 1
+}

@@ -1,0 +1,20 @@
+{
+  "actor": "chatgpt-firstparty-review",
+  "event_id": "amd-program-20261010-firstparty-001",
+  "event_type": "observation",
+  "facts": {
+    "access_note": "Program is free to join; cloud credits are subject to member qualification and terms.",
+    "advertised_credit_usd": 100,
+    "applicant_approval": "not_observed",
+    "membership_cost_usd": 0,
+    "program": "AMD AI Developer Program",
+    "provider": "AMD",
+    "resource_type": "gpu_cloud_credit"
+  },
+  "note": "Publicly advertised terms at time of review only. No owner signup or credit award confirmed.",
+  "recorded_at": "2026-10-11T03:57:31Z",
+  "review_state": "verified_public",
+  "schema_version": 1,
+  "source_url": "https://developer.amd.com/ai-developer-program/",
+  "subject_id": "amd-ai-developer-program"
+}
