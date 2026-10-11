@@ -12,12 +12,59 @@
         "provider": "AMD",
         "resource_type": "gpu_cloud_credit"
       },
-      "observation_count": 1,
-      "recorded_at": "2026-10-11T03:57:31Z",
-      "source_sha256": null,
+      "observation_count": 2,
+      "recorded_at": "2026-10-11T04:10:15Z",
+      "source_sha256": "a1baf2953e21f5f17ebc509e230e8d408c2c35149dc9f2225c7b3feb3a732def",
       "source_url": "https://developer.amd.com/ai-developer-program/",
-      "state": "NEW",
+      "state": "UNCHANGED",
       "subject_id": "amd-ai-developer-program"
+    },
+    {
+      "facts": {
+        "activation_trap": "Free AWS account plans are not eligible; account must be upgraded to a Paid Tier Plan. Usage beyond credits or on ineligible services is billed.",
+        "advertised_initial_credit_usd": 1000,
+        "advertised_max_credit_usd": 5000,
+        "applicant_approval": "not_observed",
+        "application_cost_usd": 0,
+        "eligibility_published": "Pre-series B; founded in the last 10 years; AWS account on Paid Tier Plan; new to Activate Credits or requesting more than previously received.",
+        "expiry_note": "Credits have expiration dates shown in the AWS Billing console; unredeemed promotional credit is forfeited after expiry.",
+        "faq_url": "https://startups.aws.com/faq",
+        "max_credit_condition": "Starts with $1,000; select participants may qualify for additional credits up to $5,000.",
+        "program": "AWS Activate Founders",
+        "provider": "Amazon Web Services",
+        "published_review_time": "5-10 business days",
+        "resource_type": "cloud_credit",
+        "target_applicant": "Self-funded or bootstrapped startups (no Activate Provider Org ID needed).",
+        "terms_url": "https://aws.amazon.com/awscredits/"
+      },
+      "observation_count": 1,
+      "recorded_at": "2026-10-11T04:10:17Z",
+      "source_sha256": "379f064c1b6d6e539373c61ec7c9caf0a52ba7d55198823fa374a5991e8ea88e",
+      "source_url": "https://aws.amazon.com/startups/credits/",
+      "state": "NEW",
+      "subject_id": "aws-activate-founders"
+    },
+    {
+      "facts": {
+        "acceptance": "At the discretion of Google Cloud",
+        "activation_trap": "Credits apply to Google Cloud Platform services and select offerings only; third-party models are billed directly and not covered. Offer subject to change without notification.",
+        "additional_benefit": "$200 Google Skills credits; Google Workspace Business Plus free for 12 months for new signups (domain conditions apply).",
+        "advertised_max_credit_usd": 2000,
+        "applicant_approval": "not_observed",
+        "application_cost_usd": 0,
+        "credit_validity": "Valid for one year",
+        "eligibility_published": "Technology startup planning to seek venture funding soon; founded within the last 24 months; not yet received Google Cloud credits beyond the free trial; working MVP and defined product roadmap.",
+        "exclusions_published": "Not accepted: IPO'd or acquired companies, educational institutions, government entities, nonprofits, personal blogs or content, dev shops, consultancies, agencies, crypto mining.",
+        "program": "Google for Startups Cloud Program - Start tier",
+        "provider": "Google Cloud",
+        "resource_type": "cloud_credit"
+      },
+      "observation_count": 1,
+      "recorded_at": "2026-10-11T04:10:18Z",
+      "source_sha256": "4b517a024284cb9ffbc8efd22082057cddf371b3fb73265dc2d8f9543c57ca84",
+      "source_url": "https://cloud.google.com/startup/benefits",
+      "state": "NEW",
+      "subject_id": "google-for-startups-cloud-start-tier"
     }
   ],
   "schema_version": 1

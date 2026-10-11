@@ -1,0 +1,26 @@
+{
+  "actor": "creeper-gb009-firstparty-review",
+  "event_id": "google-startups-start-tier-20261011-firstparty-001",
+  "event_type": "observation",
+  "facts": {
+    "acceptance": "At the discretion of Google Cloud",
+    "activation_trap": "Credits apply to Google Cloud Platform services and select offerings only; third-party models are billed directly and not covered. Offer subject to change without notification.",
+    "additional_benefit": "$200 Google Skills credits; Google Workspace Business Plus free for 12 months for new signups (domain conditions apply).",
+    "advertised_max_credit_usd": 2000,
+    "applicant_approval": "not_observed",
+    "application_cost_usd": 0,
+    "credit_validity": "Valid for one year",
+    "eligibility_published": "Technology startup planning to seek venture funding soon; founded within the last 24 months; not yet received Google Cloud credits beyond the free trial; working MVP and defined product roadmap.",
+    "exclusions_published": "Not accepted: IPO'd or acquired companies, educational institutions, government entities, nonprofits, personal blogs or content, dev shops, consultancies, agencies, crypto mining.",
+    "program": "Google for Startups Cloud Program - Start tier",
+    "provider": "Google Cloud",
+    "resource_type": "cloud_credit"
+  },
+  "note": "Published Start-tier terms only, from the official Google Cloud startup benefits page fetched 2026-10-11T04:10:18Z. Higher Scale tiers require qualifying VC funding and are not recorded as $0-accessible. No owner application or award. Hash = sha256 of visible text (scan_sources.py method).",
+  "recorded_at": "2026-10-11T04:10:18Z",
+  "review_state": "verified_public",
+  "schema_version": 1,
+  "source_sha256": "4b517a024284cb9ffbc8efd22082057cddf371b3fb73265dc2d8f9543c57ca84",
+  "source_url": "https://cloud.google.com/startup/benefits",
+  "subject_id": "google-for-startups-cloud-start-tier"
+}
