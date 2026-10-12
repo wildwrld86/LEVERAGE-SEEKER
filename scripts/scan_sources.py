@@ -23,13 +23,23 @@ class Content(HTMLParser):
         if self.in_title:self.title.append(data)
         if not self.skip:self.tokens.append(data)
 
-def fingerprint(url):
+DEFAULT_MAX_BYTES=1024*1024
+HARD_MAX_BYTES=4*1024*1024
+
+def max_bytes_for(source):
+    """Per-source HTML size cap. Default 1 MB; optional `max_bytes` override, never above 4 MB."""
+    value=source.get("max_bytes",DEFAULT_MAX_BYTES)
+    if isinstance(value,bool) or not isinstance(value,int) or not DEFAULT_MAX_BYTES<=value<=HARD_MAX_BYTES:
+        raise ValueError(f"{source.get('source_id')}: max_bytes must be an int between {DEFAULT_MAX_BYTES} and {HARD_MAX_BYTES}")
+    return value
+
+def fingerprint(url,max_bytes=DEFAULT_MAX_BYTES):
     if urlparse(url).scheme!="https":raise ValueError("Only HTTPS sources")
     req=Request(url,headers={"Accept":"text/html","User-Agent":"LEVERAGE-SEEKER-evidence-monitor/0.1 (https://github.com/wildwrld86/LEVERAGE-SEEKER)"})
     with urlopen(req,timeout=18) as res:
         if "html" not in res.headers.get("content-type","").lower():raise ValueError("Not HTML")
-        doc=res.read(1024*1024+1)
-        if len(doc)>1024*1024:raise ValueError("HTML exceeds 1 MB")
+        doc=res.read(max_bytes+1)
+        if len(doc)>max_bytes:raise ValueError(f"HTML exceeds {max_bytes} bytes")
     parser=Content();parser.feed(doc.decode("utf-8",errors="replace"))
     visible=re.sub(r"\s+"," "," ".join(parser.tokens)).strip()
     if len(visible)<120:raise ValueError("Too little visible text")
@@ -43,7 +53,7 @@ def run():
     for source in sources:
         sid=source["source_id"];url=source["url"]
         if not re.fullmatch(r"[a-z0-9][a-z0-9-]+",sid):raise ValueError("Bad source id")
-        try:hash_value,title=fingerprint(url)
+        try:hash_value,title=fingerprint(url,max_bytes_for(source))
         except Exception as err:
             errors.append(f"{sid}: {type(err).__name__}: {err}");continue
         if state.get(sid)==hash_value:continue
