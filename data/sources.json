@@ -4,5 +4,18 @@
     "subject_id": "amd-ai-developer-program",
     "url": "https://developer.amd.com/ai-developer-program/",
     "authority": "first_party"
+  },
+  {
+    "source_id": "aws-activate-credits",
+    "subject_id": "aws-activate-founders",
+    "url": "https://aws.amazon.com/startups/credits/",
+    "authority": "first_party"
+  },
+  {
+    "source_id": "google-startups-cloud-benefits",
+    "subject_id": "google-for-startups-cloud-start-tier",
+    "url": "https://cloud.google.com/startup/benefits",
+    "authority": "first_party",
+    "max_bytes": 3145728
   }
 ]
