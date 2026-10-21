@@ -1,0 +1,29 @@
+{
+  "actor": "creeper-gb009-firstparty-review",
+  "event_id": "aws-activate-founders-20261011-firstparty-001",
+  "event_type": "observation",
+  "facts": {
+    "activation_trap": "Free AWS account plans are not eligible; account must be upgraded to a Paid Tier Plan. Usage beyond credits or on ineligible services is billed.",
+    "advertised_initial_credit_usd": 1000,
+    "advertised_max_credit_usd": 5000,
+    "applicant_approval": "not_observed",
+    "application_cost_usd": 0,
+    "eligibility_published": "Pre-series B; founded in the last 10 years; AWS account on Paid Tier Plan; new to Activate Credits or requesting more than previously received.",
+    "expiry_note": "Credits have expiration dates shown in the AWS Billing console; unredeemed promotional credit is forfeited after expiry.",
+    "faq_url": "https://startups.aws.com/faq",
+    "max_credit_condition": "Starts with $1,000; select participants may qualify for additional credits up to $5,000.",
+    "program": "AWS Activate Founders",
+    "provider": "Amazon Web Services",
+    "published_review_time": "5-10 business days",
+    "resource_type": "cloud_credit",
+    "target_applicant": "Self-funded or bootstrapped startups (no Activate Provider Org ID needed).",
+    "terms_url": "https://aws.amazon.com/awscredits/"
+  },
+  "note": "Published terms only, from official AWS Activate credits page, Activate FAQ and AWS Promotional Credit Terms fetched 2026-10-11 ~04:10Z. Approval is discretionary; no owner application or award. Hash = sha256 of visible text (scan_sources.py method) of source_url.",
+  "recorded_at": "2026-10-11T04:10:17Z",
+  "review_state": "verified_public",
+  "schema_version": 1,
+  "source_sha256": "379f064c1b6d6e539373c61ec7c9caf0a52ba7d55198823fa374a5991e8ea88e",
+  "source_url": "https://aws.amazon.com/startups/credits/",
+  "subject_id": "aws-activate-founders"
+}

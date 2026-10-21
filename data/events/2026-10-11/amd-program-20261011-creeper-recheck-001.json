@@ -1,0 +1,21 @@
+{
+  "actor": "creeper-gb009-firstparty-review",
+  "event_id": "amd-program-20261011-creeper-recheck-001",
+  "event_type": "observation",
+  "facts": {
+    "access_note": "Program is free to join; cloud credits are subject to member qualification and terms.",
+    "advertised_credit_usd": 100,
+    "applicant_approval": "not_observed",
+    "membership_cost_usd": 0,
+    "program": "AMD AI Developer Program",
+    "provider": "AMD",
+    "resource_type": "gpu_cloud_credit"
+  },
+  "note": "GB-009 recheck of official page. Page states 'The program is free to join' and 'Receive $100 in AMD Developer Cloud credits.' Facts unchanged from prior event. No owner signup, eligibility or credit award confirmed. Hash = sha256 of visible text (scan_sources.py method) at fetch time.",
+  "recorded_at": "2026-10-11T04:10:15Z",
+  "review_state": "verified_public",
+  "schema_version": 1,
+  "source_sha256": "a1baf2953e21f5f17ebc509e230e8d408c2c35149dc9f2225c7b3feb3a732def",
+  "source_url": "https://developer.amd.com/ai-developer-program/",
+  "subject_id": "amd-ai-developer-program"
+}
