@@ -29,3 +29,14 @@ The **private** [Grokbot Desk](https://github.com/wildwrld86/grokbot-desk) is ou
 **Security:** never publish secrets, email identities, applications, balances, personal eligibility or private outcomes. See [Security](docs/SECURITY.md). The starter record reports an advertised AMD program benefit; it does **not** establish award or account approval.
 
 **Licensing decision pending:** public GitHub visibility is not a license to reuse. No open-source license has yet been granted by the owner.
+
+## Compounding intelligence / future product
+
+The owner has authorized a quiet, low-maintenance research-first direction. The durable goal is a source-linked time series that becomes useful to other independent builders, not a daily stream of transient lists.
+
+- [Compounding intelligence protocol](docs/COMPOUNDING_PROTOCOL.md)
+- [Daily delta JSON format](data/daily/README.md)
+- [Generated public intelligence JSON](docs/intelligence.json)
+- [Future free/paid product direction](docs/PRODUCT_DIRECTION.md)
+
+This is a **scaffold**, not proof that scheduled tasks already commit to GitHub or that a paid offering exists. A dedicated `research/intelligence-ledger` branch can accumulate reviewable, append-only research without changing the public main feed.

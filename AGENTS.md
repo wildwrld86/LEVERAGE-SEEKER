@@ -11,3 +11,6 @@ Read README, TEAM.md, docs/SCHEMA.md, docs/SECURITY.md, and the private grokbot-
 7. Keep credentials, account details, PII, applications, private outcomes and proprietary predictions out of commits, PRs, issues and Actions logs.
 8. Use Python standard library, low-cost cloud tools and reproducible tests. Preserve the privacy boundary.
 9. Report exact commands/tests, primary sources, actual PR links, uncertainties and blockers. Do not assert untested automation.
+
+## Compounding mode
+For additive, source-checked intelligence use [COMPOUNDING_PROTOCOL.md](docs/COMPOUNDING_PROTOCOL.md) and [daily format](data/daily/README.md). Preserve older entries and no human attention assumptions. Research agents may add source-backed observations to `research/intelligence-ledger`, but cannot merge, deploy, spend or publish private information.

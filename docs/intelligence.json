@@ -1,0 +1,13 @@
+{
+  "description": "Source-checked public opportunity statements; NOT proof of approval, individual eligibility, settled revenue, or current service availability.",
+  "opportunities": [],
+  "schema_version": 1,
+  "stats": {
+    "changed_observations": 0,
+    "checked_observations": 0,
+    "closed_observations": 0,
+    "rejected_observations": 0,
+    "tracked_opportunities": 0,
+    "unreviewed_observations": 0
+  }
+}

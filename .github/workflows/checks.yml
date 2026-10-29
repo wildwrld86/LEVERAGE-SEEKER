@@ -16,3 +16,6 @@ jobs:
       - run: python scripts/ledger.py validate
       - run: python scripts/ledger.py build --db build/leverage.sqlite --feed docs/feed.json
       - run: git diff --exit-code -- docs/feed.json
+      - run: python scripts/compile_daily.py validate
+      - run: python scripts/compile_daily.py build
+      - run: git diff --exit-code -- docs/intelligence.json
