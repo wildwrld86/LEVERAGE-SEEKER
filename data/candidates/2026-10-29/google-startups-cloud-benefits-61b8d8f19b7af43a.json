@@ -1,0 +1,12 @@
+{
+  "candidate_type": "unverified_source_fingerprint",
+  "notice": "Hash change does not prove material change; manual source verification required.",
+  "observed_at": "2026-10-29T19:42:59Z",
+  "page_title": "Startups program eligibility and benefits | Google Cloud",
+  "previous_sha256": "cb3fb4ec0897f34de91e3060260206a146cd073e02742188bb49c89bb8427cf0",
+  "review_state": "NEEDS_REVIEW",
+  "source_id": "google-startups-cloud-benefits",
+  "source_sha256": "61b8d8f19b7af43a4b9766ce7dea3359a4c6705b053dddb995389f13cc59267c",
+  "source_url": "https://cloud.google.com/startup/benefits",
+  "subject_id": "google-for-startups-cloud-start-tier"
+}
