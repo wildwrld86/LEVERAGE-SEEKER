@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-30",
+  "observations": [
+    {
+      "id": "github-actions-workflow-lockfiles",
+      "title": "GitHub Actions workflow dependency lockfiles generally available",
+      "status": "NEW",
+      "source_url": "https://github.blog/changelog/2026-10-28-github-actions-workflow-lockfiles-are-generally-available/",
+      "checked_at": "2026-10-30T04:52:21Z",
+      "claim": "GitHub announced GA on 2026-10-28 for Free, Team and Enterprise plans. The gh actions-lock extension can lock workflow actions, transitive dependencies and reusable workflows to exact commits; Dependabot can refresh lockfiles.",
+      "why_now": "Newly available stable dependency pinning is relevant to the public evidence repository, whose CI references version tags. This reduces unplanned dependency drift, not the need to review code.",
+      "verification": "source_checked",
+      "evidence_level": "first_party",
+      "confidence": "high",
+      "value_type": "cost_saving",
+      "value": "No separate license requirement announced for GitHub Free; potential avoided supply-chain incidents, not measurable revenue.",
+      "eligibility": "GitHub Actions repositories on Free, Team or Enterprise; CLI extension setup and per-workflow onboarding required.",
+      "friction": "Install and review gh actions-lock; commit generated lockfile; review dependencies for trustworthiness. No first-customer impact.",
+      "deadline": null,
+      "next_check": "2026-11-12",
+      "buyer_signal": "none",
+      "stackability": [
+        "GitHub Actions",
+        "LEVERAGE//SEEKER evidence verification",
+        "Dependabot"
+      ],
+      "score": 3
+    },
+    {
+      "id": "cloudsek-launchpad-cohort-1",
+      "title": "CloudSEK Launchpad cybersecurity incubator cohort 1",
+      "status": "REJECTED",
+      "source_url": "https://www.cloudsek.com/launchpad",
+      "checked_at": "2026-10-30T04:52:21Z",
+      "claim": "Applications are open through 2026-11-20 for an early-stage cybersecurity incubator. The 12-week cohort has 10 company places, covers India/GCC/US, and offers up to $5,000 in KeyVigil model-gateway credits, mentorship and partner access.",
+      "why_now": "Newly surfaced active deadline and attractive advertised credit amount; rejected for the present LEVERAGE//SEEKER/SECONDS MATTER scope because the program explicitly targets cybersecurity founders, not general opportunity intelligence or home-service automation.",
+      "verification": "source_checked",
+      "evidence_level": "first_party",
+      "confidence": "high",
+      "value_type": "credit",
+      "value": "Up to $5,000 in KeyVigil credits for selected cohort companies; not cash, not guaranteed, not a general-purpose cloud grant.",
+      "eligibility": "Pre-seed/seed cybersecurity founders; idea-stage accepted with strong team and clearly defined security problem. U.S. among stated markets; individual fit and admission not established.",
+      "friction": "12-week commitment, only 10 companies, selection process; no public application fee stated; requires cybersecurity product fit.",
+      "deadline": "2026-11-20",
+      "next_check": null,
+      "buyer_signal": "none",
+      "stackability": [
+        "AI security startups",
+        "model gateway credits",
+        "security-industry customer introductions"
+      ],
+      "score": 1
+    }
+  ]
+}
