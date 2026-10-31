@@ -3,6 +3,62 @@
   "opportunities": [
     {
       "buyer_signal": "none",
+      "checked_at": "2026-10-31T04:12:54Z",
+      "claim": "Cloudflare announced October 30 that beginning November 4, 2026, D1 queries returning more than 50 MB will fail. REST API import and export operations are exempt. Cloudflare says the limit covers the 99.999th percentile of D1 queries.",
+      "confidence": "high",
+      "date": "2026-10-31",
+      "deadline": "2026-11-04",
+      "eligibility": "Existing or future Cloudflare D1 users whose SQL queries return more than 50 MB; no proof that this founder currently uses D1.",
+      "evidence_level": "first_party",
+      "first_seen": "2026-10-31",
+      "friction": "Requires identifying oversized result sets, selecting needed columns and paginating. No new account, fee, or migration requirement announced.",
+      "id": "cloudflare-d1-max-query-result-50mb",
+      "next_check": "2026-11-04",
+      "observations_count": 1,
+      "score": 3,
+      "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-30-query-result-size-limit/",
+      "stackability": [
+        "Cloudflare D1",
+        "Opportunity feed exports",
+        "Evidence storage reliability"
+      ],
+      "status": "NEW",
+      "title": "Cloudflare D1 50 MB query result ceiling effective November 4",
+      "value": "Avoid oversized-query failures; no direct cash, credits, or revenue. Pagination and narrow column selection may prevent errors.",
+      "value_type": "cost_saving",
+      "verification": "source_checked",
+      "why_now": "Newly announced dated operational constraint. Relevant to developers producing large data feeds or analytics exports; LEVERAGE//SEEKER has no verified active D1 deployment, so no immediate owner task."
+    },
+    {
+      "buyer_signal": "none",
+      "checked_at": "2026-10-31T04:12:54Z",
+      "claim": "As of October 30 Browser Run defaults to Chrome 152. Quick Actions default User-Agent changed from Chrome 119 to Chrome 152, /links returns absolute URLs, links-only crawls follow relative links, and Markdown output retains code block languages.",
+      "confidence": "high",
+      "date": "2026-10-31",
+      "deadline": null,
+      "eligibility": "Browser Run is offered on Cloudflare Workers Free and Paid. Published Free allowance: 10 browser minutes/day; plan and account access unverified.",
+      "evidence_level": "first_party",
+      "first_seen": "2026-10-31",
+      "friction": "Free quota is limited; paid usage and concurrent browser fees apply beyond included Paid plan allowances. Browser scraping must respect site policies and copyright. Pricing: https://developers.cloudflare.com/browser-run/pricing/",
+      "id": "cloudflare-browser-run-chrome-152",
+      "next_check": "2026-11-14",
+      "observations_count": 1,
+      "score": 3,
+      "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-30-chrome-152/",
+      "stackability": [
+        "First-party source verification",
+        "Future public feed",
+        "Cloudflare Workers"
+      ],
+      "status": "NEW",
+      "title": "Cloudflare Browser Run Chrome 152 and improved source extraction",
+      "value": "Potentially fewer failed page reads and more reliable link normalization; not quantified and not customer revenue.",
+      "value_type": "cost_saving",
+      "verification": "source_checked",
+      "why_now": "New release improves link provenance and extraction quality for source-verified research, but any automation matching the old User-Agent may require review. No evidence the current LEVERAGE//SEEKER repository uses Browser Run."
+    },
+    {
+      "buyer_signal": "none",
       "checked_at": "2026-10-30T04:52:21Z",
       "claim": "GitHub announced GA on 2026-10-28 for Free, Team and Enterprise plans. The gh actions-lock extension can lock workflow actions, transitive dependencies and reusable workflows to exact commits; Dependabot can refresh lockfiles.",
       "confidence": "high",
@@ -61,10 +117,10 @@
   "schema_version": 1,
   "stats": {
     "changed_observations": 0,
-    "checked_observations": 2,
+    "checked_observations": 4,
     "closed_observations": 0,
     "rejected_observations": 1,
-    "tracked_opportunities": 2,
+    "tracked_opportunities": 4,
     "unreviewed_observations": 0
   }
 }
