@@ -3,6 +3,34 @@
   "opportunities": [
     {
       "buyer_signal": "none",
+      "checked_at": "2026-11-03T05:46:12Z",
+      "claim": "Cloudflare's November 2, 2026 first-party changelog postpones AI Search usage billing from November 1 to December 1, 2026. It states AI Search usage will not be charged before December 1 and published rates/included allowances remain unchanged. Default instance sync interval changes from 6 hours to 24 hours; supported custom intervals range from 15 minutes to 24 hours.",
+      "confidence": "high",
+      "date": "2026-11-03",
+      "deadline": "2026-12-01",
+      "eligibility": "Cloudflare AI Search users on Workers Free or Paid plans. Account-specific instances, limits and billing settings are unverified.",
+      "evidence_level": "first_party",
+      "first_seen": "2026-11-01",
+      "friction": "Review any instance's configured sync interval if relying on sub-24-hour updates. More frequent syncs may consume usage allowances and later incur charges; other model/generation services can bill separately. No activation or migration is needed for this research project.",
+      "id": "cloudflare-ai-search-usage-billing-2026-11-01",
+      "next_check": "2026-11-29",
+      "observations_count": 2,
+      "score": 3,
+      "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-02-billing-postponed-default-sync-interval/",
+      "stackability": [
+        "Cloudflare AI Search",
+        "Source freshness monitoring",
+        "Future verified opportunity feed"
+      ],
+      "status": "CHANGED",
+      "title": "Cloudflare postpones AI Search billing to December 1 and slows default sync",
+      "value": "One additional month before AI Search usage charges begin (December 1); no cash or guaranteed savings, and no waiver of separately billed Cloudflare or third-party services. Reduced default sync frequency can lower freshness for time-sensitive alerts.",
+      "value_type": "cost_saving",
+      "verification": "source_checked",
+      "why_now": "Directly contradicts the previously recorded November 1 billing-start date for this same subject, and materially changes default source freshness. The earlier entry remains immutable as historical evidence; this is a verified terms change, not a source-hash change. No active founder AI Search instance or billing exposure is established."
+    },
+    {
+      "buyer_signal": "none",
       "checked_at": "2026-11-01T04:42:17Z",
       "claim": "Official hackathon listing says student participants only, team size 2–4 required, companies/professional organizations excluded, $300 total cash prize and submission deadline November 1, 2026 at 3:00 PM Eastern.",
       "confidence": "high",
@@ -52,34 +80,6 @@
       "value_type": "cash",
       "verification": "source_checked",
       "why_now": "Newly surfaced currently open registration for solo developers; critical full eligibility and technical rules have not yet been published, so opportunity is only WATCH. Prize competition is not a paying customer or a reliable near-term income path."
-    },
-    {
-      "buyer_signal": "none",
-      "checked_at": "2026-11-01T04:42:17Z",
-      "claim": "Cloudflare's AI Search limits and pricing page, updated October 30, says usage-based billing begins November 1, 2026. Monthly included amounts are 5 million ingestion tokens, 10 GB-month storage, 1,000 semantic queries and 1,000 full-text queries. Beyond allowances: $0.75 per million base-ingestion tokens, $2 per GB-month storage, $0.75 per 1,000 semantic/vector/hybrid queries and $0.10 per 1,000 full-text queries.",
-      "confidence": "high",
-      "date": "2026-11-01",
-      "deadline": "2026-11-01",
-      "eligibility": "Cloudflare accounts using AI Search; allowances shown for Workers Free and Paid. Actual account entitlement and overage billing status unverified.",
-      "evidence_level": "first_party",
-      "first_seen": "2026-11-01",
-      "friction": "Metered ingestion, storage and queries above included usage; image processing has additional charge, and generation/external providers may have separate costs. Requires account-level usage review, not activation.",
-      "id": "cloudflare-ai-search-usage-billing-2026-11-01",
-      "next_check": "2026-11-03",
-      "observations_count": 1,
-      "score": 3,
-      "source_url": "https://developers.cloudflare.com/ai-search/platform/limits-pricing/",
-      "stackability": [
-        "Cloudflare Workers",
-        "Future search feed",
-        "Evidence indexing"
-      ],
-      "status": "NEW",
-      "title": "Cloudflare AI Search usage-based billing begins November 1",
-      "value": "Avoid unplanned metered costs by reviewing actual AI Search usage if the account uses this product; included free monthly allowances may cover small prototypes. No cash grant or direct revenue.",
-      "value_type": "cost_saving",
-      "verification": "source_checked",
-      "why_now": "Previously announced billing date becomes effective November 1 UTC; record as a dated cost-transition checkpoint, not as a new announcement or proof of charges. No active AI Search instance or billing exposure has been verified for this founder."
     },
     {
       "buyer_signal": "none",
@@ -196,8 +196,8 @@
   ],
   "schema_version": 1,
   "stats": {
-    "changed_observations": 0,
-    "checked_observations": 7,
+    "changed_observations": 1,
+    "checked_observations": 8,
     "closed_observations": 0,
     "rejected_observations": 2,
     "tracked_opportunities": 7,
