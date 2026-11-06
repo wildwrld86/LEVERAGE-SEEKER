@@ -1,0 +1,12 @@
+{
+  "candidate_type": "unverified_source_fingerprint",
+  "notice": "Hash change does not prove material change; manual source verification required.",
+  "observed_at": "2026-11-06T20:28:15Z",
+  "page_title": "AMD AI Developer Program",
+  "previous_sha256": "78e27afcf78e98b38d6e46dab731b411fee60a79a980e58eff66d2336d302959",
+  "review_state": "NEEDS_REVIEW",
+  "source_id": "amd-ai-developer-program",
+  "source_sha256": "bff21c8ebfc1fdfbbe00cbea3e185f20a8d4214e0feebf78cf0fe328b57c691d",
+  "source_url": "https://developer.amd.com/ai-developer-program/",
+  "subject_id": "amd-ai-developer-program"
+}
