@@ -1,0 +1,34 @@
+name: Build offline continuity capsule
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  capsule:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check public inputs
+        run: |
+          python -m unittest discover -s tests -v
+          python scripts/ledger.py validate
+          python scripts/compile_daily.py validate
+      - name: Build portable ZIP
+        run: python scripts/build_capsule.py
+      - name: Verify archive and checksums
+        shell: bash
+        run: |
+          unzip -t build/leverage-seeker-continuity.zip
+          mkdir -p build/check-capsule
+          unzip -q build/leverage-seeker-continuity.zip -d build/check-capsule
+          (cd build/check-capsule && sha256sum -c manifest.sha256)
+      - name: Upload public-only artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: leverage-seeker-continuity
+          path: build/leverage-seeker-continuity.zip
+          retention-days: 7
