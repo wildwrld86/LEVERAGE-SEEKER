@@ -2,6 +2,69 @@
   "description": "Source-checked public opportunity statements; NOT proof of approval, individual eligibility, settled revenue, or current service availability.",
   "opportunities": [
     {
+      "id": "twilio-us-a2p10dlc-fee-baseline-2026-11-09",
+      "title": "Twilio A2P 10DLC registration has fixed and recurring costs before message usage",
+      "status": "NEW",
+      "source_url": "https://help.twilio.com/articles/1260803965530-What-pricing-and-fees-are-associated-with-the-A2P-10DLC-service",
+      "checked_at": "2026-11-09T05:42:16Z",
+      "claim": "Twilio's published U.S. A2P 10DLC fee schedule lists a $4.50 one-time Brand registration fee for Sole Proprietor and Low Volume Standard brands, a $15 one-time Campaign vetting fee, and recurring campaign fees that include $2/month for Sole Proprietor Starter and $1.50/month for Low Volume Mixed use cases. Standard Brand registration is listed at $46, with campaign fees varying by use case. Carrier pass-through fees are additional to Twilio's base messaging rates.",
+      "why_now": "First source-checked telecom cost baseline added to the SECONDS MATTER ledger. It makes visible the minimum fixed and recurring customer-specific costs that earlier readiness notes described only generally; this is a newly recorded baseline, not a newly announced fee change.",
+      "verification": "source_checked",
+      "evidence_level": "first_party",
+      "confidence": "high",
+      "value_type": "none",
+      "value": "No cash or credits. A Sole Proprietor path has at least $19.50 in one-time Brand plus Campaign vetting fees and $2/month recurring campaign fees before phone-number, base SMS, and carrier costs; actual path depends on business/tax-ID status and use case.",
+      "eligibility": "U.S. senders using 10-digit long-code numbers for application-to-person messaging. Sole Proprietor registration is for eligible individuals/businesses without an EIN; businesses with an EIN generally require Low Volume Standard or Standard registration according to traffic and use case.",
+      "friction": "Requires brand and campaign details, use-case vetting, opt-in/opt-out and HELP handling, recurring campaign fees, per-message Twilio charges, and carrier pass-through fees. Customer account ownership, tax-ID category, consent, and registration status are not verified.",
+      "deadline": null,
+      "next_check": "2026-12-09",
+      "buyer_signal": "none",
+      "stackability": [
+        "SECONDS MATTER",
+        "customer-owned telecom account",
+        "Twilio",
+        "A2P 10DLC",
+        "service unit economics"
+      ],
+      "score": 4,
+      "observed_delta": "Adds exact one-time and recurring A2P fee components to the journal; prior notes mentioned registration friction but did not preserve this cost floor.",
+      "anti_leverage": "Do not absorb client registration, number, or message costs. Prefer customer-owned telecom accounts or explicit pass-through pricing; otherwise small per-customer fees can erase service margin.",
+      "date": "2026-11-09",
+      "first_seen": "2026-11-09",
+      "observations_count": 1
+    },
+    {
+      "id": "invoca-home-services-call-answer-benchmark-2026-07",
+      "title": "Invoca 2026 home-services benchmark shows substantial unanswered-call gap",
+      "status": "NEW",
+      "source_url": "https://www.invoca.com/reports/the-invoca-home-services-lead-conversion-benchmarks-report-2026",
+      "checked_at": "2026-11-09T05:42:16Z",
+      "claim": "Invoca's July 2026 home-services benchmark says 52% of all inbound calls in its platform's home-services dataset were answered by a person; the answer rate rises to 65% for calls longer than 15 seconds and 73% for calls longer than 30 seconds. The report says its analysis uses anonymized Invoca-platform calls within a broader dataset of more than 70 million calls and 600 million minutes across 10 industries. These are platform-customer benchmarks, not population-representative national estimates or evidence of purchase intent.",
+      "why_now": "Newly added, recent benchmark with explicit denominator and methodology. It supports a missed-call problem_report while correcting for short misdials and quick hangups; it does not establish willingness to pay or recoverable revenue.",
+      "verification": "source_checked",
+      "evidence_level": "secondary",
+      "confidence": "medium",
+      "value_type": "none",
+      "value": "No cash, credits, or direct savings. Problem evidence only: 52% human answer rate across Invoca's home-services platform dataset, with higher rates after excluding short calls.",
+      "eligibility": "Home-services businesses represented in Invoca's customer dataset across nine sub-industries; no public access to underlying call records and no claim that the sample represents all U.S. contractors.",
+      "friction": "Vendor-owned customer dataset and averages; sample composition may differ from small independent contractors. Does not prove a particular contractor misses calls, that a missed call was a qualified lead, or that a text-back service will recover revenue.",
+      "deadline": null,
+      "next_check": null,
+      "buyer_signal": "problem_report",
+      "stackability": [
+        "SECONDS MATTER",
+        "missed-call recovery",
+        "callback accountability",
+        "buyer-problem evidence"
+      ],
+      "score": 3,
+      "observed_delta": "First time this 2026 benchmark is captured in the public journal; the 52% figure is all inbound calls, while 65% and 73% exclude shorter calls.",
+      "anti_leverage": "Do not quote the benchmark as a national contractor average or convert it into guaranteed lost revenue. Use it to frame a problem hypothesis, then require customer-specific call-log evidence.",
+      "date": "2026-11-09",
+      "first_seen": "2026-11-09",
+      "observations_count": 1
+    },
+    {
       "buyer_signal": "none",
       "checked_at": "2026-11-03T05:46:12Z",
       "claim": "Cloudflare's November 2, 2026 first-party changelog postpones AI Search usage billing from November 1 to December 1, 2026. It states AI Search usage will not be charged before December 1 and published rates/included allowances remain unchanged. Default instance sync interval changes from 6 hours to 24 hours; supported custom intervals range from 15 minutes to 24 hours.",
@@ -196,11 +259,11 @@
   ],
   "schema_version": 1,
   "stats": {
+    "checked_observations": 10,
+    "tracked_opportunities": 9,
     "changed_observations": 1,
-    "checked_observations": 8,
     "closed_observations": 0,
     "rejected_observations": 2,
-    "tracked_opportunities": 7,
-    "unreviewed_observations": 0
+    "unreviewed_observations": 3
   }
 }
