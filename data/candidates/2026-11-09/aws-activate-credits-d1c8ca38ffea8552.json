@@ -1,0 +1,12 @@
+{
+  "candidate_type": "unverified_source_fingerprint",
+  "notice": "Hash change does not prove material change; manual source verification required.",
+  "observed_at": "2026-11-09T23:28:12Z",
+  "page_title": "AWS Activate Credits \u2013 Up to $200K for Eligible Startups   \n                     x\n                     \n                     facebook",
+  "previous_sha256": "293efddaf017188d3bd0ebc9112a499390fca071032ff53c5473ddc2dd1bf585",
+  "review_state": "NEEDS_REVIEW",
+  "source_id": "aws-activate-credits",
+  "source_sha256": "d1c8ca38ffea8552f59965c8deda8544ff0db5bef9005eb58826efd69350a29d",
+  "source_url": "https://aws.amazon.com/startups/credits/",
+  "subject_id": "aws-activate-founders"
+}
