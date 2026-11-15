@@ -2,6 +2,68 @@
   "description": "Source-checked public opportunity statements; NOT proof of approval, individual eligibility, settled revenue, or current service availability.",
   "opportunities": [
     {
+      "anti_leverage": "Do not quote an all-in SMS cost using the base rate alone. Keep telecom accounts customer-owned where feasible, pass through variable carrier and registration charges transparently, and do not front registration or usage costs.",
+      "buyer_signal": "none",
+      "checked_at": "2026-11-15T05:12:50Z",
+      "claim": "Twilio's US pricing page, marked current as of November 2026, lists base SMS at $0.0083 per 160-character segment inbound or outbound across long codes, toll-free and short codes. Long-code carrier pass-through fees vary by carrier: outbound $0.0035-$0.005 per segment and listed inbound rates $0.0025-$0.0035. A Twilio-leased long-code number costs $1.15/month; bringing an existing number costs $0.50/month. These charges are additional to A2P 10DLC brand and campaign fees captured in the November 13 journal.",
+      "confidence": "high",
+      "date": "2026-11-15",
+      "deadline": null,
+      "eligibility": "Applies to US Twilio SMS pricing. Rates are per segment, not per conversation; the actual carrier pass-through depends on the recipient's mobile network.",
+      "evidence_level": "first_party",
+      "first_seen": "2026-11-15",
+      "friction": "Carrier fees vary; messages longer than one segment multiply the base and carrier charges. Number rental, A2P brand/campaign registration, voice minutes, taxes, failed-message fees and optional messaging add-ons are separate. The pricing page says rates may change without notice.",
+      "id": "twilio-us-sms-segment-and-long-code-pricing-2026-11",
+      "next_check": "2026-12-15",
+      "observations_count": 1,
+      "observed_delta": "First source-checked capture of current November 2026 US SMS segment rates, carrier pass-through ranges and long-code monthly number charges. This supplements the existing A2P registration-cost record and is not a claim that rates changed today.",
+      "score": 4,
+      "source_url": "https://www.twilio.com/en-us/sms/pricing/us",
+      "stackability": [
+        "Customer-owned Twilio account",
+        "A2P 10DLC",
+        "SECONDS MATTER cost model",
+        "Home-services callback workflow"
+      ],
+      "status": "NEW",
+      "title": "Twilio's November 2026 US SMS pricing adds per-segment carrier and number costs",
+      "value": "No cash or credits. For a US long-code segment, base plus listed carrier fees implies about $0.0118-$0.0133 outbound and $0.0108-$0.0118 inbound where carrier fees are listed. One outbound plus one inbound segment is approximately $0.0226-$0.0251, before number rental, A2P fees, voice usage, taxes and optional add-ons. Number rental is $1.15/month for a Twilio-leased long code or $0.50/month for bring-your-own-number.",
+      "value_type": "none",
+      "verification": "source_checked",
+      "why_now": "The November 13 A2P record captured brand and campaign registration costs but not SMS unit rates or monthly number rental. This closes a material gap in SECONDS MATTER's operating-cost model; no price increase is claimed."
+    },
+    {
+      "anti_leverage": "Do not apply the 23% reported lead-loss figure to an individual contractor or promise a matching recovery rate. Use the report to justify pilot measurement, not to claim ROI or infer small-business demand.",
+      "buyer_signal": "problem_report",
+      "checked_at": "2026-11-15T05:12:50Z",
+      "claim": "Invoca's 2026 Home Services Broken Funnel report describes a survey of 137 US home-services marketing leaders at companies with 100 or more employees, fielded September 14-October 5, 2026. It reports that 81% of home-services marketers running or piloting AI agents cannot track leads from first click through conversion, 66% cannot both see and influence a lead after phone-call handoff, and 23% say slow response times and unanswered calls cost them at least 20% of inbound leads. The report separately cites consumer research in which 57% expected a lead-form response within one hour and 41% said they received one within that window.",
+      "confidence": "medium",
+      "date": "2026-11-15",
+      "deadline": null,
+      "eligibility": "Directional evidence for home-services operators and service providers. The 137 marketing-leader respondents were at US companies with 100+ employees; this is not a representative sample of solo contractors or small local businesses.",
+      "evidence_level": "first_party",
+      "first_seen": "2026-11-15",
+      "friction": "Vendor-published, self-reported survey; sample is skewed toward larger companies. Consumer response-expectation figures are from a separate consumer survey. No causal test of SECONDS MATTER or willingness-to-pay measurement is provided.",
+      "id": "invoca-home-services-broken-funnel-report-2026-10",
+      "next_check": "2027-01-15",
+      "observations_count": 1,
+      "observed_delta": "Adds a separate 2026 Invoca report with explicit phone handoff visibility, click-to-conversion tracking and reported lead-loss measures; the prior July benchmark covered call-answer, lead and on-call conversion rates.",
+      "score": 4,
+      "source_url": "https://www.invoca.com/reports/home-services-broken-funnel-report-2026",
+      "stackability": [
+        "SECONDS MATTER",
+        "Lead-to-book outcome tracking",
+        "Callback accountability",
+        "AI agent handoff measurement"
+      ],
+      "status": "NEW",
+      "title": "Invoca's 2026 home-services survey highlights lead handoff and outcome-tracking gaps",
+      "value": "No cash, credits or recovered revenue. Survey-based problem evidence only; it does not establish that a missed-call workflow causes a specific booking or revenue lift.",
+      "value_type": "none",
+      "verification": "source_checked",
+      "why_now": "This is a new home-services buyer-journey report that extends the earlier Invoca call-answer and booking benchmark. It supports measuring the full handoff and recovery chain, while exposing a gap between AI deployment and revenue attribution."
+    },
+    {
       "anti_leverage": "Do not extrapolate these rates to all contractors or convert them into guaranteed revenue. Do not justify AEO spend from low-volume ChatGPT calls; paid search converts better in this report. Track each pilot customer's own qualified inquiries and booked jobs.",
       "buyer_signal": "problem_report",
       "checked_at": "2026-11-14T05:46:52Z",
@@ -554,10 +616,10 @@
   "schema_version": 1,
   "stats": {
     "changed_observations": 4,
-    "checked_observations": 24,
+    "checked_observations": 26,
     "closed_observations": 0,
     "rejected_observations": 3,
-    "tracked_opportunities": 18,
-    "unreviewed_observations": 11
+    "tracked_opportunities": 20,
+    "unreviewed_observations": 14
   }
 }
