@@ -2,6 +2,104 @@
   "description": "Source-checked public opportunity statements; NOT proof of approval, individual eligibility, settled revenue, or current service availability.",
   "opportunities": [
     {
+      "anti_leverage": "Do not quote one call leg as the full forwarded-call cost or reuse the $0.013 worked-example rate without reconciling the current pricing page. Keep the telecom account customer-owned and pass through usage.",
+      "buyer_signal": "none",
+      "checked_at": "2026-11-16T05:48:56Z",
+      "claim": "Twilio's US Programmable Voice pricing page, marked current as of October 2026, lists local outbound calls at $0.014/min, local inbound calls at $0.0085/min, and local numbers at $1.15/month. Twilio's call-forwarding help article says each forwarded conversation creates two separately billed legs (inbound to Twilio and outbound to the destination), and each leg is rounded up to the next minute. Using the current price table, a local-to-local forwarded call is approximately $0.0225 per minute before number rental and optional features. The help article's worked example still uses $0.013/min for the outbound leg, which conflicts with the current $0.014/min price table; this is a documentation inconsistency, not proof of a rate change.",
+      "confidence": "medium",
+      "date": "2026-11-16",
+      "deadline": null,
+      "eligibility": "US Twilio Programmable Voice local-number scenario. Actual number type, destination, route and call duration determine billable rates.",
+      "evidence_level": "first_party",
+      "first_seen": "2026-11-16",
+      "friction": "Call forwarding creates two billable legs and each leg rounds up. Twilio's help article example uses an older $0.013 outbound rate while the current pricing page lists $0.014; verify current account pricing before quoting. Number rental and optional features are separate.",
+      "id": "twilio-us-voice-forwarding-two-leg-costs-2026-11",
+      "next_check": "2026-12-16",
+      "observations_count": 1,
+      "observed_delta": "First ledger capture of current US voice rates, two-leg forwarding and per-leg rounding; no price increase is claimed.",
+      "score": 4,
+      "source_url": "https://www.twilio.com/en-us/voice/pricing/us",
+      "stackability": [
+        "Twilio",
+        "Customer-owned telecom account",
+        "SECONDS MATTER call routing",
+        "Voice callback cost model"
+      ],
+      "status": "NEW",
+      "supporting_sources": [
+        "https://help.twilio.com/articles/223132367-How-Much-am-I-Charged-for-Call-Forwarding-with-Twilio"
+      ],
+      "title": "Twilio US local call forwarding bills two legs, and its current rate table differs from an older example",
+      "value": "No cash or credits. Current-price estimate: $0.0225 per minute for two local call legs; a 10-minute forwarded call is approximately $0.225. Because each leg rounds up independently, a 61-second call on both legs can bill as two minutes per leg ($0.045). Excludes $1.15/month number rental, A2P registration, SMS, recording, transcription, taxes and other features.",
+      "value_type": "none",
+      "verification": "source_checked",
+      "why_now": "The November 15 SMS record captured per-segment messaging costs but not voice. This closes a material cost-model gap for callback and forwarding architectures and prevents use of an older worked-example rate."
+    },
+    {
+      "anti_leverage": "Do not market the $20 Starter as a Voice AI plan or treat $97 Unlimited as all-in. Include phone charges and usage restrictions in comparisons; no HighLevel purchase is recommended.",
+      "buyer_signal": "none",
+      "checked_at": "2026-11-16T05:48:56Z",
+      "claim": "HighLevel's AI Product Pricing article, modified November 10, 2026, lists AI Employee Starter at $20/month per sub-account, but only for agencies subscribed to the $497/month Founder plan; Starter does not include Voice AI or Conversation AI. Growth at $50/month includes 100 Voice AI minutes and 1,000 Conversation AI responses; Unlimited at $97/month is subject to fair-use restrictions. Pay-per-use has no monthly AI subscription. Voice AI pay-per-use includes a $0.045/min Voice Engine charge plus TTS provider cost, LLM token cost and separate Phone System charges. OpenAI TTS-1 and GPT-4o Mini TTS are listed at $0.015/min; HighLevel's 10-minute example totals $0.60 before LLM tokens and phone charges.",
+      "confidence": "high",
+      "date": "2026-11-16",
+      "deadline": null,
+      "eligibility": "Applies to HighLevel sub-accounts. Starter is available only to agencies on the $497/month Founder plan. Growth and Unlimited are available to eligible sub-accounts across agency plans. Pay-per-use AI products can be used without an AI Employee subscription.",
+      "evidence_level": "first_party",
+      "first_seen": "2026-11-16",
+      "friction": "Per-location subscription fees may sit on top of an agency plan. Phone-system charges always remain separate. Voice AI pay-per-use varies by engine, TTS provider, model tokens and call duration. Included usage is subject to limits/fair use; extra usage may pause by default until enabled.",
+      "id": "highlevel-voice-ai-pay-per-use-cost-stack-2026-11",
+      "next_check": "2026-12-16",
+      "observations_count": 1,
+      "observed_delta": "Adds the detailed Voice Engine, TTS, LLM and phone-system cost stack, and clarifies that the $20 Starter plan excludes AI agents and requires the $497 Founder agency plan.",
+      "score": 4,
+      "source_url": "https://help.gohighlevel.com/support/solutions/articles/155000006652-ai-product",
+      "stackability": [
+        "HighLevel competitor pricing",
+        "SECONDS MATTER unit economics",
+        "Voice AI vs SMS-first MVP",
+        "Customer-owned telephony"
+      ],
+      "status": "NEW",
+      "supporting_sources": [
+        "https://help.gohighlevel.com/support/solutions/articles/155000001156"
+      ],
+      "title": "HighLevel Voice AI pay-per-use includes engine, TTS, model tokens and separate phone charges",
+      "value": "No cash or credits. HighLevel's example for a 10-minute Voice AI call using its $0.045/min Voice Engine and $0.015/min OpenAI TTS totals $0.60 before LLM tokens and phone-system charges. Growth is $50/month with 100 included Voice AI minutes; Starter is $20/month but excludes Voice AI.",
+      "value_type": "none",
+      "verification": "source_checked",
+      "why_now": "The November 12 competitive baseline captured $50/$97 subscription tiers and separate phone charges but omitted the restricted $20 Starter tier and the per-minute Voice Engine/TTS components. This materially improves cost comparison without claiming a price increase or newly launched plan."
+    },
+    {
+      "anti_leverage": "Do not treat this as a cloud-hosted browser feature, real local AI JSON extraction, or Kitesurf support. It does not change the cloud-first architecture decision.",
+      "buyer_signal": "none",
+      "checked_at": "2026-11-16T05:48:56Z",
+      "claim": "Cloudflare's Browser Run changelog reports a November 13, 2026 update allowing Browser Run Quick Actions to run locally under `npx wrangler dev` against a Chrome instance on the developer's machine; previously `.quickAction()` worked only in remote mode. The changelog says the local `json` action is emulated and returns placeholder data because the AI model is not available locally, and the Kitesurf browser is not supported in this local simulation. The October 30 Chrome 152 default remains a separate earlier update.",
+      "confidence": "high",
+      "date": "2026-11-16",
+      "deadline": null,
+      "eligibility": "Developers using Cloudflare Browser Run Quick Actions through Wrangler local development with a local Chrome instance. Kitesurf is not supported in the local simulation.",
+      "evidence_level": "first_party",
+      "first_seen": "2026-10-31",
+      "friction": "Requires a local Chrome environment; local JSON extraction is emulated and does not provide real model extraction; Kitesurf is unsupported. Compatibility with a cloud-first remote development environment is not established.",
+      "id": "cloudflare-browser-run-chrome-152",
+      "next_check": "2026-12-01",
+      "observations_count": 2,
+      "observed_delta": "November 13 changelog adds local Quick Actions support under wrangler dev; JSON extraction remains placeholder-only and Kitesurf is unsupported.",
+      "score": 2,
+      "source_url": "https://developers.cloudflare.com/changelog/product/browser-run/",
+      "stackability": [
+        "Cloudflare Browser Run",
+        "LEVERAGE//SEEKER source verification",
+        "Developer test workflows"
+      ],
+      "status": "CHANGED",
+      "title": "Cloudflare Browser Run Quick Actions now work in local development, with JSON and Kitesurf limitations",
+      "value": "No cash or credits. Local Quick Actions testing may reduce remote test usage for compatible developers, but no savings are quantified and the local JSON action returns placeholder data.",
+      "value_type": "none",
+      "verification": "source_checked",
+      "why_now": "The Chrome 152 record had a November 14 recheck date. Rechecking the first-party product changelog surfaced a substantive November 13 local-development capability update, not merely a page-hash change."
+    },
+    {
       "anti_leverage": "Do not quote an all-in SMS cost using the base rate alone. Keep telecom accounts customer-owned where feasible, pass through variable carrier and registration charges transparently, and do not front registration or usage costs.",
       "buyer_signal": "none",
       "checked_at": "2026-11-15T05:12:50Z",
@@ -558,34 +656,6 @@
     },
     {
       "buyer_signal": "none",
-      "checked_at": "2026-10-31T04:12:54Z",
-      "claim": "As of October 30 Browser Run defaults to Chrome 152. Quick Actions default User-Agent changed from Chrome 119 to Chrome 152, /links returns absolute URLs, links-only crawls follow relative links, and Markdown output retains code block languages.",
-      "confidence": "high",
-      "date": "2026-10-31",
-      "deadline": null,
-      "eligibility": "Browser Run is offered on Cloudflare Workers Free and Paid. Published Free allowance: 10 browser minutes/day; plan and account access unverified.",
-      "evidence_level": "first_party",
-      "first_seen": "2026-10-31",
-      "friction": "Free quota is limited; paid usage and concurrent browser fees apply beyond included Paid plan allowances. Browser scraping must respect site policies and copyright. Pricing: https://developers.cloudflare.com/browser-run/pricing/",
-      "id": "cloudflare-browser-run-chrome-152",
-      "next_check": "2026-11-14",
-      "observations_count": 1,
-      "score": 3,
-      "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-30-chrome-152/",
-      "stackability": [
-        "First-party source verification",
-        "Future public feed",
-        "Cloudflare Workers"
-      ],
-      "status": "NEW",
-      "title": "Cloudflare Browser Run Chrome 152 and improved source extraction",
-      "value": "Potentially fewer failed page reads and more reliable link normalization; not quantified and not customer revenue.",
-      "value_type": "cost_saving",
-      "verification": "source_checked",
-      "why_now": "New release improves link provenance and extraction quality for source-verified research, but any automation matching the old User-Agent may require review. No evidence the current LEVERAGE//SEEKER repository uses Browser Run."
-    },
-    {
-      "buyer_signal": "none",
       "checked_at": "2026-10-30T04:52:21Z",
       "claim": "Applications are open through 2026-11-20 for an early-stage cybersecurity incubator. The 12-week cohort has 10 company places, covers India/GCC/US, and offers up to $5,000 in KeyVigil model-gateway credits, mentorship and partner access.",
       "confidence": "high",
@@ -615,11 +685,11 @@
   ],
   "schema_version": 1,
   "stats": {
-    "changed_observations": 4,
-    "checked_observations": 26,
+    "changed_observations": 5,
+    "checked_observations": 29,
     "closed_observations": 0,
     "rejected_observations": 3,
-    "tracked_opportunities": 20,
-    "unreviewed_observations": 14
+    "tracked_opportunities": 22,
+    "unreviewed_observations": 16
   }
 }
