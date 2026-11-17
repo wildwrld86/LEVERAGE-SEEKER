@@ -2,6 +2,37 @@
   "description": "Source-checked public opportunity statements; NOT proof of approval, individual eligibility, settled revenue, or current service availability.",
   "opportunities": [
     {
+      "anti_leverage": "Do not assume every account receives the 12-hour safeguard. Do not infer that all workflow SMS remains available because native Missed Call Text Back continues during a restriction. Keep consent, business identification and opt-out handling explicit; do not treat RCS as a compliance workaround.",
+      "buyer_signal": "none",
+      "checked_at": "2026-11-17T05:24:36Z",
+      "claim": "HighLevel's LC Phone Messaging Quality Monitoring article, modified November 10, 2026, says each sub-account is monitored for opt-out (STOP) rate and carrier-filtered message Error 30007 rate over a rolling seven-day window after at least 500 SMS. Thresholds differ for young accounts (under seven days of sending history) and mature accounts. When a restriction triggers, bulk, campaign and Workflow 'Send SMS' actions are paused; one-to-one replies in Conversations, native Missed Call Text Back (if configured), and RCS continue. The article says the improved first-restriction pause is 12 hours, with a 24-hour pause for relapse during the 72-hour monitoring period, but those improvements are rolling out only to selected sub-accounts; other accounts and newly created sub-accounts retain existing safeguards.",
+      "confidence": "high",
+      "date": "2026-11-17",
+      "deadline": null,
+      "eligibility": "Applies to LC Phone sub-accounts once at least 500 SMS have been sent in a rolling seven-day window. The improved 12-hour safeguard is a phased rollout to selected sub-accounts; other sub-accounts and newly created sub-accounts retain existing safeguards. Account-specific rollout status is unknown.",
+      "evidence_level": "first_party",
+      "first_seen": "2026-11-17",
+      "friction": "STOP opt-outs and carrier filtering can pause bulk, campaign and Workflow Send SMS actions. Native Missed Call Text Back, one-to-one Conversations replies and RCS are documented to continue during the restriction. Manual review can keep automated sending paused until Support clears it; only an agency owner or admin can self-lift eligible temporary restrictions.",
+      "id": "highlevel-lc-phone-messaging-quality-restrictions-2026-11",
+      "next_check": "2026-12-01",
+      "observations_count": 1,
+      "observed_delta": "First ledger capture of HighLevel's documented SMS-quality restriction thresholds, affected workflow actions, exceptions and phased 12-hour safeguard rollout. This is not a claim that the feature launched on the check date.",
+      "score": 4,
+      "source_url": "https://help.gohighlevel.com/support/solutions/articles/155000008745-lc-phone-messaging-quality-monitoring",
+      "stackability": [
+        "HighLevel LC Phone",
+        "SECONDS MATTER",
+        "SMS consent and quality monitoring",
+        "Callback workflow resilience"
+      ],
+      "status": "NEW",
+      "title": "HighLevel LC Phone quality safeguards can pause workflow SMS while native missed-call text-back continues",
+      "value": "No cash or credits. This is an operational reliability and messaging-risk constraint; no quantified savings, customer recovery or revenue is established.",
+      "value_type": "none",
+      "verification": "source_checked",
+      "why_now": "The existing HighLevel record captured native missed-call text-back and repeat-call duplicate risk, but not the platform's message-quality restrictions. This adds a material failure mode for any SECONDS MATTER design that relies on workflow SMS after the initial acknowledgement."
+    },
+    {
       "anti_leverage": "Do not quote one call leg as the full forwarded-call cost or reuse the $0.013 worked-example rate without reconciling the current pricing page. Keep the telecom account customer-owned and pass through usage.",
       "buyer_signal": "none",
       "checked_at": "2026-11-16T05:48:56Z",
@@ -686,10 +717,10 @@
   "schema_version": 1,
   "stats": {
     "changed_observations": 5,
-    "checked_observations": 29,
+    "checked_observations": 30,
     "closed_observations": 0,
     "rejected_observations": 3,
-    "tracked_opportunities": 22,
+    "tracked_opportunities": 23,
     "unreviewed_observations": 16
   }
 }
