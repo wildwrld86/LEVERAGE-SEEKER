@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "observations": [
+    {
+      "id": "google-firebase-buildhybridai-hackathon-2026",
+      "title": "Recheck: #BuildHybridAI Sprint 2 quota request closes November 18 at 10 AM Pacific",
+      "status": "WATCH",
+      "source_url": "https://firebasehybridaihackathon.devpost.com/rules",
+      "checked_at": "2026-11-18T05:49:52Z",
+      "claim": "Google's official #BuildHybridAI rules remain accessible and confirm that the Sprint 2 optional Google Account Quota request is due Wednesday, November 18, 2026 at 10:00 AM Pacific, with approved accounts sent November 19. Sprint 3 requests are due November 25 at 10:00 AM Pacific, with accounts sent November 27. Each approved quota account is valid for four days and approval is discretionary. Contest submissions close November 30 at 2:00 PM Pacific. The official prize pool is $30,000 total, including a $10,000 Grand Prize; prizes are not guaranteed. Solo entries are permitted, but submissions must use Firebase AI Logic at runtime, App Check, a public open-source repository, a functioning demo, and a public YouTube demonstration no longer than three minutes.",
+      "why_now": "The scheduled November 18 recheck confirms the imminent Sprint 2 quota cutoff and the final Sprint 3 request date. No change to the published contest terms was found.",
+      "observed_delta": "Rechecked the official rules on the Sprint 2 request date. The request cutoff is now within approximately twelve hours of this check; no contest-term change was found.",
+      "verification": "source_checked",
+      "evidence_level": "first_party",
+      "confidence": "high",
+      "value_type": "cash",
+      "value": "$30,000 total contest prize pool, including a $10,000 Grand Prize; awards are competitive and not guaranteed. Optional Google Account Quota is discretionary, lasts four days, and is not cash.",
+      "eligibility": "Adults in eligible jurisdictions; the United States is not listed among excluded jurisdictions. Individual/solo entries are allowed. The project must use Firebase AI Logic at runtime and meet App Check, public open-source repository, functioning demo, free evaluation access, and public YouTube video requirements.",
+      "friction": "Sprint 2 quota request closes November 18 at 10:00 AM Pacific; approval is discretionary and any issued account lasts four days. Sprint 3 closes November 25 at 10:00 AM Pacific. Submission closes November 30 at 2:00 PM Pacific. Existing projects must be significantly updated after November 11. The Firebase AI Logic integration, App Check, public repository/license, demo and video are substantial work; fees outside the provisioned quota remain the entrant's responsibility.",
+      "deadline": "2026-11-18",
+      "next_check": "2026-11-25",
+      "buyer_signal": "none",
+      "stackability": [
+        "Firebase AI Logic",
+        "Google developer distribution",
+        "LEVERAGE-SEEKER"
+      ],
+      "anti_leverage": "Do not divert SECONDS MATTER for a speculative prize. The $30,000 is a pool, not a grant or guaranteed income; quota approval is discretionary and temporary. No application or quota request is assumed.",
+      "score": 2
+    },
+    {
+      "id": "upwork-hvac-ghl-crm-setup-150-fixed-2026-11-16",
+      "title": "Upwork HVAC buyer requests $150 GHL CRM, follow-up and missed-call setup",
+      "status": "NEW",
+      "source_url": "https://www.upwork.com/freelance-jobs/apply/GoHighLevel-GHL-CRM-Setup-Marketing-Automation-Expert-for-HVAC-Company_~022122351690066421957/",
+      "checked_at": "2026-11-18T05:49:52Z",
+      "claim": "An Upwork-indexed $150 fixed-price, one-time listing requests GoHighLevel CRM pipelines for HVAC inquiries, inspections, estimates and completed jobs; assignment and follow-up automation; SMS/email sequences with stop conditions; missed-call text-back; booking; lead-source reporting; and a team walkthrough. The current indexed snapshot shows 50+ proposals and one interview, with no job-specific hire displayed. The client's account profile shows approximately $20,000 total historical spend and 565 hires, but those are account-wide figures and do not establish an award or payment for this listing. The listing title says posted November 16 while the indexed body says 'Posted 1 hour ago'; posting-age metadata is inconsistent. Direct page retrieval returned HTTP 403.",
+      "why_now": "First observed in the current research run. It is a relevant home-services implementation request with an established client account, but the low fixed budget and heavy competition make it a weak service-price benchmark.",
+      "observed_delta": "New marketplace listing not present in the existing 33-subject journal. Captures explicit implementation intent for HVAC CRM, missed-call text-back and outcome reporting; no job-specific hire or payment is established.",
+      "verification": "needs_review",
+      "evidence_level": "secondary",
+      "confidence": "low",
+      "value_type": "proposed_revenue",
+      "value": "$150 fixed-price one-time listing; no award, funded milestone or settled payment verified.",
+      "eligibility": "Worldwide listing for a GoHighLevel specialist, ideally with HVAC or other home-services workflow experience. The public client profile is associated with a US Virgin Islands account.",
+      "friction": "50+ proposals and one interview indicate heavy competition. The fixed budget is $150 for a broad CRM and automation scope. Direct page retrieval is blocked with HTTP 403, and the search result has inconsistent posting-age metadata. Client-wide spend and hire totals are not attributable to this job.",
+      "deadline": null,
+      "next_check": "2026-11-22",
+      "buyer_signal": "explicit_purchase_intent",
+      "stackability": [
+        "SECONDS MATTER buyer-demand validation",
+        "HVAC and home-services workflows",
+        "GoHighLevel CRM",
+        "Missed-call and booking outcome reporting"
+      ],
+      "anti_leverage": "Do not treat a low one-time implementation budget as recurring product willingness-to-pay. Avoid competing on generic low-price GHL setup; the differentiated hypothesis remains callback accountability and verified recovery outcomes.",
+      "score": 2
+    },
+    {
+      "id": "upwork-home-services-voice-ai-snapshot-1500-2026-11-01",
+      "title": "Recheck: $1,500 home-services voice-AI snapshot passed its November 17 v1 milestone without a visible job outcome",
+      "status": "WATCH",
+      "source_url": "https://www.upwork.com/freelance-jobs/apply/GoHighLevel-voice-expert-build-missed-call-recovery-snapshot-for-home-service-companies_~022117023095758887082/",
+      "checked_at": "2026-11-18T05:49:52Z",
+      "claim": "The current Upwork search-index snapshot continues to show the $1,500 fixed-price home-services voice-AI snapshot project with 20–50 proposals and 16 interviews. Its advertised Snapshot v1 milestone was due November 17, 2026 and has now passed; the final handoff milestone is listed for November 20. The client's account profile displays approximately $292 total historical spend and two hires, but those aggregate account figures do not establish that this specific job was awarded, funded, or completed. No job-specific milestone or payment outcome is visible. Direct page retrieval returned HTTP 403, so the listing's live status and outcome remain unresolved.",
+      "why_now": "The prior recheck date and the advertised Snapshot v1 milestone have passed. The remaining November 20 handoff date creates a specific next verification point; no job-specific outcome can currently be confirmed.",
+      "observed_delta": "Material time-based recheck: Snapshot v1 due November 17 has passed, while handoff is listed for November 20. Client-account spend and hire totals are now visible in the search snapshot but are not attributable to this job.",
+      "verification": "needs_review",
+      "evidence_level": "secondary",
+      "confidence": "low",
+      "value_type": "proposed_revenue",
+      "value": "$1,500 total fixed-price project across three advertised milestones; no job-specific award, funded milestone, completed delivery or settled payment verified.",
+      "eligibility": "Worldwide, expert-level GoHighLevel voice-AI builder; listing asks for two live home-services voice-AI examples, a screen-share walkthrough, and US Eastern-hours overlap.",
+      "friction": "20–50 proposals and 16 interviews; direct listing retrieval is blocked. Snapshot v1 milestone has passed, but job-specific status is not visible. Client-profile totals are account-wide and must not be treated as project revenue or proof of hire.",
+      "deadline": "2026-11-20",
+      "next_check": "2026-11-20",
+      "buyer_signal": "explicit_purchase_intent",
+      "stackability": [
+        "SECONDS MATTER buyer-demand validation",
+        "Home-services voice AI",
+        "GoHighLevel reusable snapshots",
+        "Milestone and outcome verification"
+      ],
+      "anti_leverage": "Do not count account-wide spend or hires as this job's result. A listing and interview count are not payment; retain as unresolved hiring intent until a job-specific outcome is visible.",
+      "score": 2
+    }
+  ]
+}
