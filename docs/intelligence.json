@@ -2,6 +2,36 @@
   "description": "Source-checked public opportunity statements; NOT proof of approval, individual eligibility, settled revenue, or current service availability.",
   "opportunities": [
     {
+      "anti_leverage": "Do not divert SECONDS MATTER for a speculative prize. The $30,000 is a pool, not a grant or guaranteed income; quota approval is discretionary and temporary. No application or quota request is assumed.",
+      "buyer_signal": "none",
+      "checked_at": "2026-11-18T05:49:52Z",
+      "claim": "Google's official #BuildHybridAI rules remain accessible and confirm that the Sprint 2 optional Google Account Quota request is due Wednesday, November 18, 2026 at 10:00 AM Pacific, with approved accounts sent November 19. Sprint 3 requests are due November 25 at 10:00 AM Pacific, with accounts sent November 27. Each approved quota account is valid for four days and approval is discretionary. Contest submissions close November 30 at 2:00 PM Pacific. The official prize pool is $30,000 total, including a $10,000 Grand Prize; prizes are not guaranteed. Solo entries are permitted, but submissions must use Firebase AI Logic at runtime, App Check, a public open-source repository, a functioning demo, and a public YouTube demonstration no longer than three minutes.",
+      "confidence": "high",
+      "date": "2026-11-18",
+      "deadline": "2026-11-18",
+      "eligibility": "Adults in eligible jurisdictions; the United States is not listed among excluded jurisdictions. Individual/solo entries are allowed. The project must use Firebase AI Logic at runtime and meet App Check, public open-source repository, functioning demo, free evaluation access, and public YouTube video requirements.",
+      "evidence_level": "first_party",
+      "first_seen": "2026-11-01",
+      "friction": "Sprint 2 quota request closes November 18 at 10:00 AM Pacific; approval is discretionary and any issued account lasts four days. Sprint 3 closes November 25 at 10:00 AM Pacific. Submission closes November 30 at 2:00 PM Pacific. Existing projects must be significantly updated after November 11. The Firebase AI Logic integration, App Check, public repository/license, demo and video are substantial work; fees outside the provisioned quota remain the entrant's responsibility.",
+      "id": "google-firebase-buildhybridai-hackathon-2026",
+      "next_check": "2026-11-25",
+      "observations_count": 5,
+      "observed_delta": "Rechecked the official rules on the Sprint 2 request date. The request cutoff is now within approximately twelve hours of this check; no contest-term change was found.",
+      "score": 2,
+      "source_url": "https://firebasehybridaihackathon.devpost.com/rules",
+      "stackability": [
+        "Firebase AI Logic",
+        "Google developer distribution",
+        "LEVERAGE-SEEKER"
+      ],
+      "status": "WATCH",
+      "title": "Recheck: #BuildHybridAI Sprint 2 quota request closes November 18 at 10 AM Pacific",
+      "value": "$30,000 total contest prize pool, including a $10,000 Grand Prize; awards are competitive and not guaranteed. Optional Google Account Quota is discretionary, lasts four days, and is not cash.",
+      "value_type": "cash",
+      "verification": "source_checked",
+      "why_now": "The scheduled November 18 recheck confirms the imminent Sprint 2 quota cutoff and the final Sprint 3 request date. No change to the published contest terms was found."
+    },
+    {
       "anti_leverage": "Do not assume every account receives the 12-hour safeguard. Do not infer that all workflow SMS remains available because native Missed Call Text Back continues during a restriction. Keep consent, business identification and opt-out handling explicit; do not treat RCS as a compliance workaround.",
       "buyer_signal": "none",
       "checked_at": "2026-11-17T05:24:36Z",
@@ -414,38 +444,6 @@
       "why_now": "First durable cost-stack benchmark for the most visible GHL competitor path. The pricing matters because a solo founder should not absorb an agency subscription, per-location AI plan, and phone usage before validating a paying customer."
     },
     {
-      "anti_leverage": "Do not divert SECONDS MATTER capacity. Firebase AI Logic is a mandatory architecture constraint, a public open-source demo must be free, and the prize is uncertain. No quota approval or entry is assumed.",
-      "buyer_signal": "none",
-      "checked_at": "2026-11-12T05:23:06Z",
-      "claim": "The official rules page is now accessible. It states the contest submission period began November 11, 2026 at 1:30 PM Pacific and closes November 30 at 2:00 PM Pacific. The official prize table confirms a $30,000 total pool: $10,000 Grand Prize, $7,000 first runner-up, $4,000 second runner-up, and three $3,000 platform awards. This resolves the prior event-page prize ambiguity. The rules also correct the earlier journal's quota cutoff: Sprint 1 requests were due November 11 at 12:00 AM Pacific, not 2:00 PM; that window has passed. Sprint 2 requests are due November 18 at 10:00 AM Pacific, with accounts sent November 19. Optional quota is discretionary and lasts four days from issuance.",
-      "confidence": "high",
-      "date": "2026-11-12",
-      "deadline": "2026-11-30",
-      "eligibility": "Individuals, teams and organizations may enter if above the legal age of majority and not in excluded jurisdictions or otherwise barred by sanctions, export controls, or conflict-of-interest rules. No application or eligibility adjudication has been performed.",
-      "evidence_level": "first_party",
-      "first_seen": "2026-11-01",
-      "friction": "All app inference must use Firebase AI Logic; App Check is required; a public open-source repository, functioning project, public YouTube demo of no more than three minutes, and free access for judges are required. Existing projects must be significantly updated during the contest period. Sprint 1 quota cutoff has passed; later quota remains approval-gated and lasts four days.",
-      "id": "google-firebase-buildhybridai-hackathon-2026",
-      "next_check": "2026-11-18",
-      "observations_count": 4,
-      "observed_delta": "Official rules are now available and settle the prize split at $30,000 total / $10,000 Grand Prize. They state the contest opened November 11 at 1:30 PM Pacific and Sprint 1 quota requests closed November 11 at 12:00 AM Pacific. This explicitly corrects the previous daily record's 9:00 AM opening and 2:00 PM quota cutoff.",
-      "score": 2,
-      "source_url": "https://firebasehybridaihackathon.devpost.com/rules",
-      "stackability": [
-        "Firebase AI Logic",
-        "Firebase Agent Skills",
-        "Existing app only if significantly updated",
-        "Optional Google Account Quota",
-        "Public demo asset"
-      ],
-      "status": "CHANGED",
-      "title": "Official #BuildHybridAI rules resolve the prize split and correct the first quota cutoff",
-      "value": "$30,000 advertised total cash prize pool, including a $10,000 Grand Prize. This is winner-only prize money, not accessible funding, expected revenue, or a guaranteed award.",
-      "value_type": "cash",
-      "verification": "source_checked",
-      "why_now": "Scheduled recheck after the submission period opened found the binding rules page live. It resolves the previous prize-allocation uncertainty and contradicts two earlier timing claims: the 9:00 AM submission opening and 2:00 PM Sprint 1 quota cutoff. Preserve this correction rather than silently rewriting prior history."
-    },
-    {
       "anti_leverage": "Not a replacement for the cloud-first intelligence engine or production infrastructure. The $10 equivalent is capped, non-rollover usage credit; own API keys are not free and model context may leave the device.",
       "buyer_signal": "none",
       "checked_at": "2026-11-11T05:53:37Z",
@@ -717,10 +715,10 @@
   "schema_version": 1,
   "stats": {
     "changed_observations": 5,
-    "checked_observations": 30,
+    "checked_observations": 31,
     "closed_observations": 0,
     "rejected_observations": 3,
     "tracked_opportunities": 23,
-    "unreviewed_observations": 16
+    "unreviewed_observations": 18
   }
 }
