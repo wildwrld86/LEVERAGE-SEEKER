@@ -2,6 +2,38 @@
   "description": "Source-checked public opportunity statements; NOT proof of approval, individual eligibility, settled revenue, or current service availability.",
   "opportunities": [
     {
+      "anti_leverage": "Do not claim this is free or enabled in the owner's account. Hosting does not bypass A2P/Toll-Free Verification, consent or opt-out rules. Do not disable an existing SMS provider or port a customer's number without carrier/HighLevel confirmation; do not assume mobile numbers qualify.",
+      "buyer_signal": "none",
+      "checked_at": "2026-11-20T05:49:36Z",
+      "claim": "HighLevel's support guide, modified October 30, 2026, describes Number Hosting (Hosted SMS/Hosted Messaging): an eligible business number can remain owned by its current carrier, with voice service continuing there, while supported SMS/MMS traffic is routed through LC Phone after verification and approval. The initial Labs self-service method is for eligible US local and toll-free numbers in GHL-managed Locations, supports SMS only, one number per request, and can be initiated only by Agency Owners/Admins where the feature is available. Support-assisted guidance covers eligible US/Canadian numbers and supported SMS/MMS. Hosting requires owner verification, a Letter of Authorization and carrier review; applicable A2P 10DLC or Toll-Free Verification, consent, sender identification and opt-out requirements still apply. Mobile/cellular numbers and numbers already using SMS with another provider are not eligible as currently configured; a Twilio voice number in another Twilio account is also excluded.",
+      "confidence": "high",
+      "date": "2026-11-20",
+      "deadline": null,
+      "eligibility": "HighLevel Labs self-service, where available, for eligible US local/toll-free numbers in GHL-managed Locations; one number per request and Agency Owner/Admin initiation. Support-assisted guidance covers eligible US/Canada numbers. The owner's account access and plan entitlement are unknown.",
+      "evidence_level": "first_party",
+      "first_seen": "2026-11-20",
+      "friction": "Owner verification, signed LOA and carrier review are required. A2P 10DLC or Toll-Free Verification and consent/sender/opt-out rules still apply. Existing SMS with another provider is not eligible as configured; mobile numbers are excluded. Labs is SMS-only with no fixed completion time; Support-assisted guidance estimates 3–10 business days. Account and usage pricing are not established by this guide.",
+      "id": "highlevel-lc-phone-hosted-messaging-existing-number-2026-10",
+      "next_check": "2026-12-04",
+      "observations_count": 1,
+      "observed_delta": "New first-party capability record: hosted messaging can avoid porting voice service, but adds owner authorization, carrier review and separate messaging-registration requirements. No owner account entitlement or activation is assumed.",
+      "score": 4,
+      "source_url": "https://help.gohighlevel.com/support/solutions/articles/48001230556-enable-your-landline-for-text-messages-in-highlevel",
+      "stackability": [
+        "SECONDS MATTER",
+        "Existing contractor phone numbers",
+        "HighLevel LC Phone",
+        "Customer-owned voice carrier",
+        "A2P 10DLC"
+      ],
+      "status": "NEW",
+      "title": "HighLevel hosted messaging can add SMS to eligible existing business numbers without moving voice service",
+      "value": "No cash, credits or quantified savings. Potential reduction in number-porting friction only; the guide does not state hosting or account fees.",
+      "value_type": "none",
+      "verification": "source_checked",
+      "why_now": "First capture in the public ledger of a directly relevant route for a contractor to keep its familiar voice number and carrier while adding HighLevel messaging. The guide was modified October 30; this record does not claim a launch on the check date."
+    },
+    {
       "anti_leverage": "Do not claim that 80% of calls are missed, that delayed replies cause a specific revenue loss, or that a workflow recovers a stated percentage. Keep Jobber owner survey measures separate from Invoca call-platform measures. Validate against a pilot customer's own call log and booked-job outcomes.",
       "buyer_signal": "problem_report",
       "checked_at": "2026-11-19T06:06:22Z",
@@ -747,10 +779,10 @@
   "schema_version": 1,
   "stats": {
     "changed_observations": 6,
-    "checked_observations": 33,
+    "checked_observations": 34,
     "closed_observations": 0,
     "rejected_observations": 3,
-    "tracked_opportunities": 24,
-    "unreviewed_observations": 18
+    "tracked_opportunities": 25,
+    "unreviewed_observations": 22
   }
 }
