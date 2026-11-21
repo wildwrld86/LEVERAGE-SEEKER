@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-01",
+  "observations": [
+    {
+      "id": "cloudflare-ai-search-usage-billing-2026-11-01",
+      "title": "Cloudflare AI Search usage-based billing begins November 1",
+      "status": "NEW",
+      "source_url": "https://developers.cloudflare.com/ai-search/platform/limits-pricing/",
+      "checked_at": "2026-11-01T04:42:17Z",
+      "claim": "Cloudflare's AI Search limits and pricing page, updated October 30, says usage-based billing begins November 1, 2026. Monthly included amounts are 5 million ingestion tokens, 10 GB-month storage, 1,000 semantic queries and 1,000 full-text queries. Beyond allowances: $0.75 per million base-ingestion tokens, $2 per GB-month storage, $0.75 per 1,000 semantic/vector/hybrid queries and $0.10 per 1,000 full-text queries.",
+      "why_now": "Previously announced billing date becomes effective November 1 UTC; record as a dated cost-transition checkpoint, not as a new announcement or proof of charges. No active AI Search instance or billing exposure has been verified for this founder.",
+      "verification": "source_checked",
+      "evidence_level": "first_party",
+      "confidence": "high",
+      "value_type": "cost_saving",
+      "value": "Avoid unplanned metered costs by reviewing actual AI Search usage if the account uses this product; included free monthly allowances may cover small prototypes. No cash grant or direct revenue.",
+      "eligibility": "Cloudflare accounts using AI Search; allowances shown for Workers Free and Paid. Actual account entitlement and overage billing status unverified.",
+      "friction": "Metered ingestion, storage and queries above included usage; image processing has additional charge, and generation/external providers may have separate costs. Requires account-level usage review, not activation.",
+      "deadline": "2026-11-01",
+      "next_check": "2026-11-03",
+      "buyer_signal": "none",
+      "stackability": [
+        "Cloudflare Workers",
+        "Future search feed",
+        "Evidence indexing"
+      ],
+      "score": 3
+    },
+    {
+      "id": "google-firebase-buildhybridai-hackathon-2026",
+      "title": "Google #BuildHybridAI 2026 accepts solo entrants; full rules pending",
+      "status": "WATCH",
+      "source_url": "https://firebasehybridaihackathon.devpost.com/",
+      "checked_at": "2026-11-01T04:42:17Z",
+      "claim": "Google's official Devpost event page shows registration open for a Firebase AI Logic hybrid inference hackathon. Solo or team entries are permitted; the event lists a $10,000 cash grand prize, submissions November 9–30, 2026, closing November 30 at 2:00 PM PT. Full challenge rules, submission requirements, judging criteria and prize details are scheduled for November 9.",
+      "why_now": "Newly surfaced currently open registration for solo developers; critical full eligibility and technical rules have not yet been published, so opportunity is only WATCH. Prize competition is not a paying customer or a reliable near-term income path.",
+      "verification": "source_checked",
+      "evidence_level": "first_party",
+      "confidence": "high",
+      "value_type": "cash",
+      "value": "Advertised $10,000 cash grand prize to one winner, conditional on eligibility and judging; no guaranteed credits, income, or payment.",
+      "eligibility": "Event overview says entrants must be above age of majority and reside in an allowed country; solo participation permitted. Complete rules due November 9; individual eligibility not confirmed.",
+      "friction": "Requires qualifying hybrid on-device/cloud AI project, competition and substantial development; detailed rules not available until November 9. No entry fee is stated on overview; verify final rules.",
+      "deadline": "2026-11-30",
+      "next_check": "2026-11-09",
+      "buyer_signal": "none",
+      "stackability": [
+        "Firebase AI Logic",
+        "Public demo/proof asset",
+        "Developer recognition"
+      ],
+      "score": 2
+    },
+    {
+      "id": "trmi-lovhack-multiplayer-2026",
+      "title": "TRMI x Lovhack excludes solo non-student applicants",
+      "status": "REJECTED",
+      "source_url": "https://lovhack-trmi-2026.devpost.com/",
+      "checked_at": "2026-11-01T04:42:17Z",
+      "claim": "Official hackathon listing says student participants only, team size 2–4 required, companies/professional organizations excluded, $300 total cash prize and submission deadline November 1, 2026 at 3:00 PM Eastern.",
+      "why_now": "Time-sensitive false-positive from a broad AI-hackathon search. A public online AI event may appear open to any founder, but explicit student-only and 2–4 person team restrictions make it unsuitable for a solo independent founder without a qualifying team.",
+      "verification": "source_checked",
+      "evidence_level": "first_party",
+      "confidence": "high",
+      "value_type": "cash",
+      "value": "Advertised $300 cash prize for one winning team; not a grant, not available to a solo entrant.",
+      "eligibility": "Students above age of majority in allowed jurisdictions, teams of 2–4; no solo entry. Founder student status unverified, but the solo-only operating constraint is incompatible.",
+      "friction": "Must form a student team, register with organizer, build and submit within event window; less than one day remains, small prize relative to effort.",
+      "deadline": "2026-11-01",
+      "next_check": null,
+      "buyer_signal": "none",
+      "stackability": [],
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-19",
+  "observations": [
+    {
+      "id": "google-firebase-buildhybridai-hackathon-2026",
+      "title": "Recheck: Google #BuildHybridAI Sprint 2 quota window has closed; Sprint 3 is the final request window",
+      "status": "CHANGED",
+      "source_url": "https://firebasehybridaihackathon.devpost.com/rules",
+      "checked_at": "2026-11-19T06:06:22Z",
+      "claim": "The official rules confirm that the Sprint 2 optional Google Account Quota request window closed on Wednesday, November 18, 2026 at 10:00 AM Pacific. The final Sprint 3 request window closes Wednesday, November 25 at 10:00 AM Pacific, with approved accounts sent November 27. Any approved quota account lasts four days and is discretionary; no approval or request is assumed. The contest submission deadline remains November 30 at 2:00 PM Pacific. The total prize pool is $30,000, including a $10,000 Grand Prize, but prizes are competitive and not guaranteed. Solo entries are allowed. Submissions require Firebase AI Logic at runtime, App Check, a public open-source repository, a functioning project available free for judging, and a public demonstration video. Existing projects must be significantly updated after the contest opens.",
+      "why_now": "The November 18 Sprint 2 deadline has passed. This recheck records the closure of that quota window and preserves the final Sprint 3 and submission dates rather than repeating the prior imminent-deadline warning.",
+      "observed_delta": "Sprint 2 quota requests are now closed; Sprint 3 is the final optional quota request window on November 25. The contest itself remains open until November 30.",
+      "verification": "source_checked",
+      "evidence_level": "first_party",
+      "confidence": "high",
+      "value_type": "cash",
+      "value": "$30,000 total competitive prize pool, including a $10,000 Grand Prize; no guaranteed award or cash benefit. Optional Google Account Quota is discretionary, lasts four days, and is not cash.",
+      "eligibility": "Adults in eligible jurisdictions; the United States is not among the listed exclusions. Individuals/solo entrants are permitted. Project must satisfy Firebase AI Logic runtime, App Check, public open-source repository, functioning demo, free judging access, and public video requirements.",
+      "friction": "Sprint 2 is closed. Sprint 3 request closes November 25 at 10:00 AM Pacific; account issuance is scheduled for November 27 and approval is discretionary. Submission closes November 30 at 2:00 PM Pacific. Existing projects must be significantly updated after November 11. Firebase integration, App Check, open-source publication, working demo and video are substantial work; charges outside any four-day quota remain the entrant's responsibility.",
+      "deadline": "2026-11-30",
+      "next_check": "2026-11-25",
+      "buyer_signal": "none",
+      "stackability": [
+        "Firebase AI Logic",
+        "Google developer distribution",
+        "LEVERAGE//SEEKER"
+      ],
+      "score": 2,
+      "anti_leverage": "Do not divert SECONDS MATTER for a speculative prize. The prize pool is not a grant or guaranteed income; quota is temporary and discretionary. No application, quota request or approval is assumed."
+    },
+    {
+      "id": "jobber-2026-home-service-lead-response-expectations-2026-11",
+      "title": "Jobber 2026 survey finds a gap between home-service response speed and owner-reported customer expectations",
+      "status": "NEW",
+      "source_url": "https://www.getjobber.com/home-service-trends-report/",
+      "checked_at": "2026-11-19T06:06:22Z",
+      "claim": "Jobber's 2026 Home Service Trends Report says it surveyed 1,050 US home-service business owners through Conjointly in December 2025. Owners reported that 20% of businesses respond to new leads within an hour, 60% respond the same day, 18% within two days, and 2% after more than two days (published shares are subject to rounding). Owners also reported that more than 55% of their customers expect a reply within an hour, including 28% who expect an immediate response; these expectation figures are owners' estimates, not a separate customer survey. The report's HVAC response figure is internally inconsistent: the Marketing and Sales section says 11% respond within an hour, while the HVAC industry spotlight says 17%.",
+      "why_now": "This is the first journal capture of Jobber's 2026 owner survey. It adds an owner-side response-time measure to the previously recorded Invoca call-platform benchmarks, but its methodology and denominator are different.",
+      "observed_delta": "New first-party survey source adds reported lead-response timing and owner-estimated customer expectations. It also exposes an internal 11% versus 17% HVAC discrepancy that should remain unresolved rather than choosing one figure.",
+      "verification": "source_checked",
+      "evidence_level": "first_party",
+      "confidence": "medium",
+      "value_type": "none",
+      "value": "No cash, credits or measured recovered revenue. Directional problem evidence only: owner-reported response times and owner-estimated customer expectations.",
+      "eligibility": "Not a program or benefit. Survey covers 1,050 US home-service business owners across trades including HVAC, plumbing, roofing, cleaning, electrical, lawn care, tree care and general contracting.",
+      "friction": "Vendor-published survey; response times are self-reported and customer expectations are reported by business owners rather than measured in a separate customer survey. Published response-time shares total approximately 101% due to rounding. HVAC within-one-hour response is inconsistent inside the report (11% in one section, 17% in another); trade subgroup sizes are not stated. It does not measure missed-call rates, causal recovery, willingness to pay or actual revenue.",
+      "deadline": null,
+      "next_check": "2027-02-19",
+      "buyer_signal": "problem_report",
+      "stackability": [
+        "SECONDS MATTER",
+        "Home-services speed-to-lead",
+        "HVAC discovery",
+        "Pilot outcome measurement",
+        "Invoca call-answer benchmarks"
+      ],
+      "score": 4,
+      "anti_leverage": "Do not claim that 80% of calls are missed, that delayed replies cause a specific revenue loss, or that a workflow recovers a stated percentage. Keep Jobber owner survey measures separate from Invoca call-platform measures. Validate against a pilot customer's own call log and booked-job outcomes."
+    }
+  ]
+}
