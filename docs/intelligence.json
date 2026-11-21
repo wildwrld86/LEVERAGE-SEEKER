@@ -2,6 +2,73 @@
   "description": "Source-checked public opportunity statements; NOT proof of approval, individual eligibility, settled revenue, or current service availability.",
   "opportunities": [
     {
+      "anti_leverage": "Do not say 59% of missed calls occur from 9am to 3pm or infer an unanswered-call rate. Do not treat publisher payouts as a contractor's revenue or a customer's job value. Use the report only to choose a provisional pilot coverage window, then validate against the customer's own call logs.",
+      "buyer_signal": "none",
+      "checked_at": "2026-11-21T05:54:00Z",
+      "claim": "Lead Smart says its Q3 2026 U.S. Home Services Inbound Call Index analyzes 163,748 connected homeowner calls delivered through its publisher network from July 1 through September 30, 2026. It reports 59% of calls arriving between 9am and 3pm Central, 82% between 8am and 5pm, and 85.9% on weekdays. HVAC represented 15.8% of connected calls, plumbing 15.1%, and roofing 6.8%. Its methodology counts only calls that connected to a home-service business and excludes unconnected, blocked and duplicate attempts. The dataset is the network's own traffic, not a representative census of all U.S. home-service calls.",
+      "confidence": "medium",
+      "date": "2026-11-21",
+      "deadline": null,
+      "eligibility": "Not a grant or product benefit. The dataset covers connected homeowner calls delivered through Lead Smart's U.S. home-service publisher network during Q3 2026.",
+      "evidence_level": "first_party",
+      "first_seen": "2026-11-21",
+      "friction": "Lead Smart is a pay-per-call and lead-generation network with a commercial interest in call demand. Its own network is not representative of every U.S. contractor. Unconnected, blocked and duplicate attempts are excluded, so the report cannot estimate missed-call frequency. Payouts vary by ZIP code and are publisher-side amounts.",
+      "id": "leadsmart-us-home-services-inbound-call-index-q3-2026",
+      "next_check": "2027-01-15",
+      "observations_count": 1,
+      "observed_delta": "First capture of Lead Smart's Q3 call index and its methodology. The report provides network-specific connected-call timing, but explicitly excludes unconnected calls and therefore cannot establish a missed-call rate.",
+      "score": 3,
+      "source_url": "https://www.leadsmartinc.com/news/us-home-services-inbound-call-index-q3-2026",
+      "stackability": [
+        "SECONDS MATTER",
+        "Pilot coverage schedule",
+        "HVAC and plumbing",
+        "Time-to-answer measurement"
+      ],
+      "status": "NEW",
+      "title": "Lead Smart Q3 index places 59% of connected home-service calls between 9am and 3pm Central",
+      "value": "No cash or credits. The time-of-day distribution may inform pilot scheduling. Published pay-per-call amounts are affiliate-publisher payouts, not contractor revenue, customer lifetime value, or a SECONDS MATTER service-price benchmark.",
+      "value_type": "none",
+      "verification": "source_checked",
+      "why_now": "Adds a measured time-of-day distribution that can inform a low-cost pilot's coverage and callback test window. It is more actionable for scheduling than another undifferentiated missed-call headline."
+    },
+    {
+      "anti_leverage": "Do not claim every missed call is billable: the documented condition is more than 20 seconds during operating hours, with routing and schedule exceptions. Do not claim a text-back prevents the initial charge. Do not invent a dollar impact or assume every contractor uses LSA. A call answered after 20 seconds is evaluated as an answered call, not automatically charged based on ring time.",
+      "buyer_signal": "none",
+      "checked_at": "2026-11-21T05:54:00Z",
+      "claim": "Google's current Local Services Help page lists a missed phone call during the advertiser's operating hours as a valid lead when the caller stays on the line for more than 20 seconds. If the call-receiving setup requires a keypress to route the caller, the timer starts after the first keypress and no charge applies if the caller never presses a key. A voicemail or automated greeting without a keypress is treated as a connected call and is charged if the caller stays more than 20 seconds. Operating hours are taken from the Google Business Profile; if the ad schedule differs, the call must fall within both windows. The same phone number or email is not charged again for follow-up calls/messages within 15 days after a lead is charged. Search Engine Land reported the policy effective date as October 1, 2026; the Google help page currently documents the rule but does not display that effective date.",
+      "confidence": "high",
+      "date": "2026-11-21",
+      "deadline": null,
+      "eligibility": "Google Local Services Ads advertisers. A missed call is described as a valid lead when it occurs during Google Business Profile operating hours and the caller stays on the line more than 20 seconds; if an ad schedule differs, the call must also fall within the active ad schedule. Account- and market-specific applicability should be confirmed in the advertiser's own LSA account.",
+      "evidence_level": "first_party",
+      "first_seen": "2026-11-21",
+      "friction": "Lead prices vary by location, job type, lead type and bidding mode; the help page gives no fixed missed-call price. The 20-second rule applies to unanswered calls, not calls answered after 20 seconds. IVR keypress and voicemail/greeting handling affect the timer. Follow-up contacts using the same phone/email are not charged again within 15 days after a lead is charged. A post-call text should not be assumed to prevent the initial missed-call lead charge.",
+      "id": "google-lsa-missed-call-billable-lead-20-seconds-2026-10",
+      "next_check": "2026-12-05",
+      "observations_count": 1,
+      "observed_delta": "New first-party policy record: Google's current help page now explicitly documents the 20-second missed-call condition, IVR keypress exception, voicemail/greeting handling, operating-hours/ad-schedule intersection, and 15-day repeat-contact rule. No prior LSA billing-policy subject existed in the journal.",
+      "score": 5,
+      "source_url": "https://support.google.com/localservices/answer/7195435",
+      "stackability": [
+        "SECONDS MATTER",
+        "Google Local Services Ads advertisers",
+        "Live overflow and answer routing",
+        "Callback accountability",
+        "Lead billing audit"
+      ],
+      "status": "NEW",
+      "supporting_source_urls": [
+        "https://searchengineland.com/google-local-services-ads-will-charge-for-some-missed-calls-starting-oct-1-485798",
+        "https://www.seroundtable.com/google-lsa-missed-subsequent-calls-41940.html"
+      ],
+      "title": "Google Local Services Ads documents a 20-second billable missed-call rule",
+      "value": "No cash or credits. Potential cost-avoidance and lead-recovery value for LSA advertisers is unquantified; no avoided spend, recovered job value, or service price is established.",
+      "value_type": "none",
+      "verification": "source_checked",
+      "why_now": "First capture in the repository of a directly relevant LSA billing rule. It changes the economic context for home-service advertisers: an unanswered call can become a paid lead before a callback is attempted. This is a first ledger capture, not a claim that the policy launched today."
+    },
+    {
       "anti_leverage": "Do not claim this is free or enabled in the owner's account. Hosting does not bypass A2P/Toll-Free Verification, consent or opt-out rules. Do not disable an existing SMS provider or port a customer's number without carrier/HighLevel confirmation; do not assume mobile numbers qualify.",
       "buyer_signal": "none",
       "checked_at": "2026-11-20T05:49:36Z",
@@ -779,10 +846,10 @@
   "schema_version": 1,
   "stats": {
     "changed_observations": 6,
-    "checked_observations": 34,
+    "checked_observations": 36,
     "closed_observations": 0,
     "rejected_observations": 3,
-    "tracked_opportunities": 25,
-    "unreviewed_observations": 22
+    "tracked_opportunities": 27,
+    "unreviewed_observations": 23
   }
 }
