@@ -2,6 +2,43 @@
   "description": "Source-checked public opportunity statements; NOT proof of approval, individual eligibility, settled revenue, or current service availability.",
   "opportunities": [
     {
+      "anti_leverage": "Do not apply Twilio rates to HighLevel LC Phone or Hosted Messaging; those are separate price schedules. Do not treat a segment rate as a per-conversation cost, ignore carrier fees or registration, or assume a free trial can register for production A2P. Prices can change.",
+      "buyer_signal": "none",
+      "checked_at": "2026-11-22T06:07:16Z",
+      "claim": "Twilio's US SMS pricing page says pricing is current as of November 2026. US long-code SMS base pricing is $0.0083 per 160-character segment, inbound and outbound. Published outbound long-code carrier pass-through fees are $0.0035 for AT&T, $0.0045 for T-Mobile, $0.005 for Verizon, $0.005 for US Cellular and $0.0042 for other listed carriers, giving a combined base-plus-carrier range of about $0.0118–$0.0133 per outbound segment for those carriers. Twilio lists a leased long-code number at $1.15/month and bring-your-own-number at $0.50/month; failed-message processing is $0.001. The A2P 10DLC quickstart says trial accounts cannot register: a paid account, purchased US 10DLC number and compliance profile are prerequisites, and campaign review can take up to five business days. The existing journal separately records A2P brand and campaign fees; no change to those fees is claimed here.",
+      "confidence": "high",
+      "date": "2026-11-22",
+      "deadline": null,
+      "eligibility": "US senders using Twilio 10DLC application-to-person messaging. A Twilio trial account cannot register for A2P 10DLC; a paid account, US 10DLC number and compliance profile are required.",
+      "evidence_level": "first_party",
+      "first_seen": "2026-11-22",
+      "friction": "Carrier-specific pass-through fees, multiple segments for messages over 160 characters, monthly number rent, one-time and recurring A2P fees, paid-account requirement, consent/opt-in evidence, public privacy policy and manual campaign vetting (up to five business days). Optional SMS add-ons cost extra. No Twilio account or production registration is assumed.",
+      "id": "twilio-us-sms-unit-cost-paid-a2p-gate-2026-11",
+      "next_check": "2026-12-22",
+      "observations_count": 1,
+      "observed_delta": "Adds base per-segment SMS pricing, carrier pass-through rates, number rent/BYON pricing and the explicit paid-account requirement for A2P registration. No messages were sent and no account, registration or approval is assumed.",
+      "score": 4,
+      "source_url": "https://www.twilio.com/en-us/sms/pricing/us",
+      "stackability": [
+        "SECONDS MATTER",
+        "Twilio",
+        "US SMS",
+        "A2P 10DLC",
+        "Telecom unit economics",
+        "Customer-owned carrier account"
+      ],
+      "status": "NEW",
+      "supporting_source_urls": [
+        "https://www.twilio.com/docs/messaging/compliance/a2p-10dlc/quickstart",
+        "https://help.twilio.com/articles/11587910480155-A2P-10DLC-Campaign-Vetting-FAQ"
+      ],
+      "title": "Twilio US long-code SMS has per-segment carrier costs and a paid-account A2P gate",
+      "value": "No cash or credits. Direct Twilio long-code baseline is approximately $0.0118–$0.0133 per outbound 160-character segment for the listed US carriers, plus number rent, A2P brand/campaign fees and other applicable service charges. This is not a quote for HighLevel LC Phone, voice or AI usage.",
+      "value_type": "none",
+      "verification": "source_checked",
+      "why_now": "First source-checked US SMS usage-cost baseline and trial-to-paid registration gate added to the SECONDS MATTER telecom unit-economics ledger. This is a first capture, not a newly announced price change."
+    },
+    {
       "anti_leverage": "Do not say 59% of missed calls occur from 9am to 3pm or infer an unanswered-call rate. Do not treat publisher payouts as a contractor's revenue or a customer's job value. Use the report only to choose a provisional pilot coverage window, then validate against the customer's own call logs.",
       "buyer_signal": "none",
       "checked_at": "2026-11-21T05:54:00Z",
@@ -846,10 +883,10 @@
   "schema_version": 1,
   "stats": {
     "changed_observations": 6,
-    "checked_observations": 36,
+    "checked_observations": 37,
     "closed_observations": 0,
     "rejected_observations": 3,
-    "tracked_opportunities": 27,
-    "unreviewed_observations": 23
+    "tracked_opportunities": 28,
+    "unreviewed_observations": 27
   }
 }
