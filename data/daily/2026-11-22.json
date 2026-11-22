@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-22",
+  "observations": [
+    {
+      "id": "twilio-us-sms-unit-cost-paid-a2p-gate-2026-11",
+      "title": "Twilio US long-code SMS has per-segment carrier costs and a paid-account A2P gate",
+      "status": "NEW",
+      "source_url": "https://www.twilio.com/en-us/sms/pricing/us",
+      "supporting_source_urls": [
+        "https://www.twilio.com/docs/messaging/compliance/a2p-10dlc/quickstart",
+        "https://help.twilio.com/articles/11587910480155-A2P-10DLC-Campaign-Vetting-FAQ"
+      ],
+      "checked_at": "2026-11-22T06:07:16Z",
+      "claim": "Twilio's US SMS pricing page says pricing is current as of November 2026. US long-code SMS base pricing is $0.0083 per 160-character segment, inbound and outbound. Published outbound long-code carrier pass-through fees are $0.0035 for AT&T, $0.0045 for T-Mobile, $0.005 for Verizon, $0.005 for US Cellular and $0.0042 for other listed carriers, giving a combined base-plus-carrier range of about $0.0118–$0.0133 per outbound segment for those carriers. Twilio lists a leased long-code number at $1.15/month and bring-your-own-number at $0.50/month; failed-message processing is $0.001. The A2P 10DLC quickstart says trial accounts cannot register: a paid account, purchased US 10DLC number and compliance profile are prerequisites, and campaign review can take up to five business days. The existing journal separately records A2P brand and campaign fees; no change to those fees is claimed here.",
+      "why_now": "First source-checked US SMS usage-cost baseline and trial-to-paid registration gate added to the SECONDS MATTER telecom unit-economics ledger. This is a first capture, not a newly announced price change.",
+      "observed_delta": "Adds base per-segment SMS pricing, carrier pass-through rates, number rent/BYON pricing and the explicit paid-account requirement for A2P registration. No messages were sent and no account, registration or approval is assumed.",
+      "verification": "source_checked",
+      "evidence_level": "first_party",
+      "confidence": "high",
+      "value_type": "none",
+      "value": "No cash or credits. Direct Twilio long-code baseline is approximately $0.0118–$0.0133 per outbound 160-character segment for the listed US carriers, plus number rent, A2P brand/campaign fees and other applicable service charges. This is not a quote for HighLevel LC Phone, voice or AI usage.",
+      "eligibility": "US senders using Twilio 10DLC application-to-person messaging. A Twilio trial account cannot register for A2P 10DLC; a paid account, US 10DLC number and compliance profile are required.",
+      "friction": "Carrier-specific pass-through fees, multiple segments for messages over 160 characters, monthly number rent, one-time and recurring A2P fees, paid-account requirement, consent/opt-in evidence, public privacy policy and manual campaign vetting (up to five business days). Optional SMS add-ons cost extra. No Twilio account or production registration is assumed.",
+      "deadline": null,
+      "next_check": "2026-12-22",
+      "buyer_signal": "none",
+      "stackability": [
+        "SECONDS MATTER",
+        "Twilio",
+        "US SMS",
+        "A2P 10DLC",
+        "Telecom unit economics",
+        "Customer-owned carrier account"
+      ],
+      "score": 4,
+      "anti_leverage": "Do not apply Twilio rates to HighLevel LC Phone or Hosted Messaging; those are separate price schedules. Do not treat a segment rate as a per-conversation cost, ignore carrier fees or registration, or assume a free trial can register for production A2P. Prices can change."
+    },
+    {
+      "id": "upwork-home-service-ghl-setup-150-hvac-roofing-2026-11",
+      "title": "Two new home-service GHL setup listings advertise $150 one-time budgets; HVAC scope includes missed-call text-back",
+      "status": "NEW",
+      "source_url": "https://www.upwork.com/freelance-jobs/apply/GoHighLevel-GHL-CRM-Setup-Marketing-Automation-Expert-for-HVAC-Company_~022123821221386583050/",
+      "supporting_source_urls": [
+        "https://www.upwork.com/freelance-jobs/apply/GoHighLevel-GHL-CRM-Setup-Marketing-Automation-Expert-for-Roofing-Company_~022123839726520099270/"
+      ],
+      "checked_at": "2026-11-22T06:07:16Z",
+      "claim": "Current Upwork search-index snapshots show two distinct home-service GHL implementation listings posted November 20, 2026. The HVAC listing advertises $150 fixed for CRM pipelines, SMS/email follow-up with stop conditions, booking, missed-call text-back and lead-source reporting; its activity snapshot shows 20–50 proposals and zero interviews, while the client profile is in Australia with $3.2K historical spend and 160 account-wide hires. A separate roofing listing advertises $150 fixed for pipelines and follow-up around inspections, repair requests and replacement estimates; its snapshot shows 50+ proposals, zero interviews and one hire indicator, while the US client profile shows $2.5K historical spend and 98 account-wide hires. Direct retrieval of both job pages returned HTTP 403. The hire indicator and account-wide history do not establish a job-specific funded milestone or settled payment.",
+      "why_now": "Two new, distinct home-service GHL listings surfaced after the prior recheck. One explicitly includes missed-call text-back and reporting. Their URLs differ from the older November 16 HVAC listing, which did not independently resurface; the new listings are not treated as updates to that older job.",
+      "observed_delta": "First capture of two November 20 home-service implementation requests at $150 each. One includes missed-call text-back; neither has a verified job-specific award or payment.",
+      "verification": "needs_review",
+      "evidence_level": "firsthand_report",
+      "confidence": "low",
+      "value_type": "proposed_revenue",
+      "value": "Two separate advertised one-time fixed budgets of $150 each ($300 combined advertised budget across distinct listings); no award, funded milestone, delivery or settled payment is verified. Not a recurring price benchmark.",
+      "eligibility": "Public remote Upwork listings seeking GoHighLevel CRM/automation skills. The HVAC buyer profile is in Australia; the roofing buyer profile is in the United States. These are hiring requests, not grants or guaranteed work.",
+      "friction": "HVAC listing shows 20–50 proposals and zero interviews; roofing shows 50+ proposals and zero interviews plus one hire indicator. Both direct pages returned HTTP 403. Client-wide spend and hire counts are not attributable to these jobs. Scope is broader than a minimal missed-call text-back setup. No contact or application occurred.",
+      "deadline": null,
+      "next_check": "2026-11-25",
+      "buyer_signal": "explicit_purchase_intent",
+      "stackability": [
+        "SECONDS MATTER",
+        "HVAC",
+        "Roofing",
+        "GoHighLevel",
+        "Missed-call text-back",
+        "Lead follow-up",
+        "CRM pipelines"
+      ],
+      "score": 3,
+      "anti_leverage": "Treat these as explicit hiring intent only, not paid customer outcomes. Do not treat $150 as a validated service price or recurring product demand. Do not attribute account-wide spend or hire counts to the specific jobs."
+    },
+    {
+      "id": "upwork-home-service-missed-call-offer-prices-199-297-2026-11",
+      "title": "Two operator listings disclose $199–$297 monthly home-service lead-response offers; no subscribers are verified",
+      "status": "NEW",
+      "source_url": "https://www.upwork.com/freelance-jobs/apply/GoHighLevel-Expert-for-Text-Back-Setup_~022120285438472241622/",
+      "supporting_source_urls": [
+        "https://www.upwork.com/freelance-jobs/apply/Phone-Sales-Rep-Sell-Marketing-Services-Home-Service-Businesses-Colombia-Preferred_~022115735418359500416/"
+      ],
+      "checked_at": "2026-11-22T06:07:16Z",
+      "claim": "An Upwork-indexed ValenteOps listing describes a missed-call text-back service for plumbers and home-service businesses and seeks a GoHighLevel specialist to build onboarding from demo to payment, including an agreement funnel, setup page, reminder/go-live/payment workflows, A2P 10DLC registration, conditional call forwarding and a reusable snapshot. It specifies a $199/month recurring Stripe product; the index shows 50+ proposals, eight interviews and one hire indicator, while the US client profile shows $142 total historical spend and five account-wide hires. A separate Local Pro Directory listing seeks a phone sales representative to sell a GoHighLevel-based home-service marketing offer advertised at $297/month with no contract; the described bundle includes missed-call text-back, review requests, past-customer reactivation and a directory listing. Its index shows fewer than five proposals and zero interviews. Direct retrieval of both pages returned HTTP 403. Neither listing establishes customer subscriptions, recurring revenue or settled payment.",
+      "why_now": "First capture of two operator-stated monthly offer prices tied directly to missed-call and home-service lead-response services. This helps bound a pricing hypothesis while keeping implementation/sales hiring intent separate from end-customer willingness to pay.",
+      "observed_delta": "Adds two distinct public offer-price statements ($199/month and $297/month) and two hiring signals: one for onboarding implementation and one for sales distribution. No subscriber count, invoice, contract value or customer payment is verified.",
+      "verification": "needs_review",
+      "evidence_level": "firsthand_report",
+      "confidence": "low",
+      "value_type": "proposed_revenue",
+      "value": "Advertised offer prices of $199/month and $297/month. These are proposed retail prices, not cash to the founder, verified MRR, paid subscriptions or a validated market-clearing price.",
+      "eligibility": "Public Upwork listings from US-based operators seeking implementation and sales labor for home-service lead-response offers. Not an open funding opportunity and not evidence that the founder has a buyer.",
+      "friction": "ValenteOps shows 50+ proposals, eight interviews and one hire indicator; Local Pro Directory shows fewer than five proposals and zero interviews. Direct pages returned HTTP 403. Account-wide spend/hire totals are not job-specific. The $297 offer bundles reviews, reactivation and directory services beyond missed-call recovery. Hiring an implementer or sales representative is not proof of end-customer adoption.",
+      "deadline": null,
+      "next_check": "2026-11-29",
+      "buyer_signal": "explicit_purchase_intent",
+      "stackability": [
+        "SECONDS MATTER",
+        "Missed-call text-back",
+        "Recurring service pricing",
+        "GHL onboarding",
+        "Conditional call forwarding",
+        "A2P 10DLC",
+        "Sales distribution"
+      ],
+      "score": 3,
+      "anti_leverage": "Do not report $199 or $297 as actual MRR, realized customer spend or proven willingness to pay. The $199 Stripe product is described in a hiring listing, not verified as active subscriptions; the $297 offer bundles additional services. Treat both as operator-stated price hypotheses."
+    },
+    {
+      "id": "upwork-hvac-ghl-crm-setup-150-fixed-2026-11-16",
+      "title": "Recheck blocked: exact November 16 HVAC GHL listing did not independently resurface",
+      "status": "BLOCKED",
+      "source_url": "https://www.upwork.com/freelance-jobs/apply/GoHighLevel-GHL-CRM-Setup-Marketing-Automation-Expert-for-HVAC-Company_~022122351690066421957/",
+      "supporting_source_urls": [
+        "https://www.upwork.com/freelance-jobs/apply/GoHighLevel-GHL-CRM-Setup-Marketing-Automation-Expert-for-HVAC-Company_~022123821221386583050/",
+        "https://www.upwork.com/freelance-jobs/apply/GoHighLevel-GHL-CRM-Setup-Marketing-Automation-Expert-for-Roofing-Company_~022123839726520099270/"
+      ],
+      "checked_at": "2026-11-22T06:07:16Z",
+      "claim": "The exact prior Upwork listing recorded on November 18 for a $150 HVAC GoHighLevel CRM setup did not independently resurface in the current exact-title search, and direct retrieval of the stored URL remains blocked with HTTP 403. Current search found two distinct November 20 listings with different URL identifiers: a new $150 HVAC GHL setup and a new $150 roofing GHL setup. They are separate subjects and cannot be used to infer a hire, closure or payment outcome for the November 16 listing. No job-specific outcome for the older listing is verified.",
+      "why_now": "Scheduled November 22 recheck found similar but distinct new listings. Preserving the exact URL identity prevents a new listing's activity from being incorrectly attached to the older unresolved subject.",
+      "observed_delta": "The older listing's current status remains blocked/unresolved; two newer listings are separately captured under a different stable subject. No closure or payment is inferred.",
+      "verification": "needs_review",
+      "evidence_level": "secondary",
+      "confidence": "low",
+      "value_type": "proposed_revenue",
+      "value": "Original listing advertised $150 fixed; no job-specific award, funded milestone or settled payment verified.",
+      "eligibility": "Original remote Upwork HVAC GHL listing; current buyer/client status cannot be independently confirmed.",
+      "friction": "Exact listing did not resurface; direct URL retrieval returned HTTP 403. Similar new listings have different identifiers and must not be conflated. No contact or application occurred.",
+      "deadline": null,
+      "next_check": "2026-11-29",
+      "buyer_signal": "explicit_purchase_intent",
+      "stackability": [
+        "Negative intelligence",
+        "Upwork listing identity resolution",
+        "Home-services GHL CRM"
+      ],
+      "score": 1,
+      "anti_leverage": "Do not mark CLOSED, completed or paid. Do not transfer proposal, interview or hire indicators from the two newer listings to this older URL."
+    },
+    {
+      "id": "upwork-ghl-voice-agent-phone-system-10-fixed-hire-2026-11-05",
+      "title": "Recheck blocked: exact $10 GHL phone-system listing not resurfaced; a similar $10 listing is a different job",
+      "status": "BLOCKED",
+      "source_url": "https://www.upwork.com/freelance-jobs/apply/GoHighLevel-Voice-Agent-Phone-System-CRM-Automation-Setup_~022118382877529259777/",
+      "supporting_source_urls": [
+        "https://www.upwork.com/freelance-jobs/apply/GoHighLevel-Voice-Agent-Specialist-Needed-for-Lead-Qualification-and-Appointment-Booking_~022117314113795326908/"
+      ],
+      "checked_at": "2026-11-22T06:07:16Z",
+      "claim": "The exact prior Upwork listing for a $10 GoHighLevel voice-agent/phone-system setup did not independently resurface in the current exact-title search, and direct retrieval of its stored URL remains blocked with HTTP 403. A separate $10 GoHighLevel AI voice-agent listing is currently indexed with one hire indicator, but it has a different URL identifier and a different posting date/client. Its hire indicator cannot be transferred to the older phone-system listing. No award, funded milestone or settled payment for the older listing is verified.",
+      "why_now": "Scheduled recheck surfaced a near-duplicate title and price but a different listing identifier. This is a useful false-positive guard: similar descriptions and budgets do not establish that two marketplace records are the same buyer or job.",
+      "observed_delta": "Exact original listing remains blocked/unresolved; a separate similarly worded $10 listing was identified but not merged into its history. No closure or payment is inferred.",
+      "verification": "needs_review",
+      "evidence_level": "secondary",
+      "confidence": "low",
+      "value_type": "proposed_revenue",
+      "value": "Original listing advertised $10 fixed; no job-specific award, funded milestone or settled payment verified.",
+      "eligibility": "Original remote Upwork GHL voice-agent/phone-system listing; current buyer/client status cannot be independently confirmed.",
+      "friction": "Exact listing did not resurface and direct retrieval returned HTTP 403. Similar $10 listing has a different URL identifier, client and posting date. The original budget is not a viable service-price benchmark.",
+      "deadline": null,
+      "next_check": "2026-11-29",
+      "buyer_signal": "explicit_purchase_intent",
+      "stackability": [
+        "Negative intelligence",
+        "Upwork listing identity resolution",
+        "GHL voice agent"
+      ],
+      "score": 1,
+      "anti_leverage": "Do not attribute the separate listing's one-hire indicator to this record. Do not mark CLOSED or paid; retain the original $10 budget only as a historical advertised amount."
+    }
+  ]
+}
