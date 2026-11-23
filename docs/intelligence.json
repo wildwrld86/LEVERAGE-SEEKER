@@ -2,6 +2,74 @@
   "description": "Source-checked public opportunity statements; NOT proof of approval, individual eligibility, settled revenue, or current service availability.",
   "opportunities": [
     {
+      "anti_leverage": "Do not treat 10,000 Neurons/day as transferable credits or assume every suggested replacement is free. Model IDs and paid gates can change; no live runtime response or account entitlement was tested.",
+      "buyer_signal": "none",
+      "checked_at": "2026-11-23T06:05:20Z",
+      "claim": "Cloudflare's Nov 5 first-party changelog says 24 Workers AI model IDs were retired on Nov 20, 2026; requests to them now return HTTP 410 Gone, error 5028. The date was moved from Nov 15 to Nov 20. The pricing page last updated Nov 18 retains 10,000 Neurons/day at no charge, but exceeding that requires Workers Paid; several recommended frontier replacements, including DeepSeek V4.1 Flash 1017 and GLM-5.3, require Workers Paid or prepaid AI Gateway credits. The earlier July 28 free-access example listing Nemotron 3 120B is superseded by its Nov 20 retirement.",
+      "confidence": "high",
+      "date": "2026-11-23",
+      "deadline": "2026-11-20",
+      "eligibility": "Developers invoking Workers AI model IDs. The daily Neuron allocation applies to Workers AI, but model-specific paid gates still apply. No account-specific entitlement or active workload is verified.",
+      "evidence_level": "first_party",
+      "first_seen": "2026-11-23",
+      "friction": "24 model IDs no longer return responses; pinned IDs must be replaced. Suggested replacements differ in price and plan eligibility. No live API test, model migration, or account access was performed.",
+      "id": "cloudflare-workers-ai-model-retirements-2026-11-20",
+      "next_check": "2026-12-07",
+      "observations_count": 1,
+      "observed_delta": "Confirms the November 20 retirement date has taken effect and records the documented 410 response. The later retirement supersedes the July 28 example that listed Nemotron 3 120B among free-access models; this is a terms/availability change, not a page-hash change.",
+      "score": 3,
+      "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-05-planned-model-deprecations/",
+      "stackability": [
+        "Workers AI",
+        "LLM evaluation",
+        "model fallback",
+        "LEVERAGE//SEEKER",
+        "near-$0 inference"
+      ],
+      "status": "CLOSED",
+      "supporting_source_urls": [
+        "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+        "https://developers.cloudflare.com/changelog/post/2026-07-28-models-require-workers-paid/"
+      ],
+      "title": "Cloudflare Workers AI retired 24 model IDs on Nov 20; some suggested replacements require paid billing",
+      "value": "No cash or transferable credits. Workers Free includes 10,000 Neurons/day; usage above that requires Workers Paid and is billed at $0.011 per 1,000 Neurons. Some frontier models separately require paid billing or prepaid AI Gateway credits.",
+      "value_type": "none",
+      "verification": "source_checked",
+      "why_now": "First post-deadline verification of the model retirement. It also reconciles a stale July 28 free-model example with the later November 5 retirement notice. No API call was made and no Cloudflare account entitlement is assumed."
+    },
+    {
+      "anti_leverage": "Do not migrate a project that does not use the deprecated packages. This is not a free-credit offer or evidence that the founder has an active Cloudflare AI deployment.",
+      "buyer_signal": "none",
+      "checked_at": "2026-11-23T06:05:20Z",
+      "claim": "Cloudflare's Oct 21 changelog introduces Agents SDK createAI for the AI SDK and Pi AI. It unifies Workers AI model IDs, AI Gateway catalog models, dynamic routes and vendor AI SDK models through an AI binding or account ID/API token. Cloudflare marks workers-ai-provider and ai-gateway-provider feature-frozen and deprecated; createAI supports routing, fallbacks and BYOK.",
+      "confidence": "high",
+      "date": "2026-11-23",
+      "deadline": null,
+      "eligibility": "Developers using Cloudflare Agents SDK with the AI SDK or Pi AI. No account, deployment or package usage is assumed.",
+      "evidence_level": "first_party",
+      "first_seen": "2026-11-23",
+      "friction": "Requires installing/updating the Agents SDK and migrating provider imports/configuration; model routing, auth, fallback behavior and data handling still require testing. Cloudflare says migrate at convenience; no hard removal deadline is stated.",
+      "id": "cloudflare-agents-createai-provider-deprecation-2026-10-21",
+      "next_check": "2027-01-23",
+      "observations_count": 1,
+      "observed_delta": "Adds the Oct 21 first-party deprecation/migration notice to the ledger; the two older provider packages are feature-frozen, while createAI provides a unified entry point.",
+      "score": 2,
+      "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-21-createai/",
+      "stackability": [
+        "Cloudflare Workers AI",
+        "AI Gateway",
+        "Agents SDK",
+        "AI SDK",
+        "agent routing"
+      ],
+      "status": "NEW",
+      "title": "Cloudflare Agents SDK createAI replaces feature-frozen Workers AI provider packages",
+      "value": "No cash, credits or direct savings. Potential reduction in provider-adapter fragmentation for projects already using Cloudflare Agents SDK and AI SDK/Pi AI.",
+      "value_type": "none",
+      "verification": "source_checked",
+      "why_now": "First capture in the durable journal of a provider-package migration that could affect a future Cloudflare-hosted agent/evaluation stack. No use of either deprecated package in the current repository was established, so this is readiness intelligence rather than an immediate migration task."
+    },
+    {
       "anti_leverage": "Do not apply Twilio rates to HighLevel LC Phone or Hosted Messaging; those are separate price schedules. Do not treat a segment rate as a per-conversation cost, ignore carrier fees or registration, or assume a free trial can register for production A2P. Prices can change.",
       "buyer_signal": "none",
       "checked_at": "2026-11-22T06:07:16Z",
@@ -883,10 +951,10 @@
   "schema_version": 1,
   "stats": {
     "changed_observations": 6,
-    "checked_observations": 37,
-    "closed_observations": 0,
+    "checked_observations": 39,
+    "closed_observations": 1,
     "rejected_observations": 3,
-    "tracked_opportunities": 28,
-    "unreviewed_observations": 27
+    "tracked_opportunities": 30,
+    "unreviewed_observations": 28
   }
 }
