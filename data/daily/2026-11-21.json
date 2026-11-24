@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-21",
+  "observations": [
+    {
+      "id": "google-lsa-missed-call-billable-lead-20-seconds-2026-10",
+      "title": "Google Local Services Ads documents a 20-second billable missed-call rule",
+      "status": "NEW",
+      "source_url": "https://support.google.com/localservices/answer/7195435",
+      "supporting_source_urls": [
+        "https://searchengineland.com/google-local-services-ads-will-charge-for-some-missed-calls-starting-oct-1-485798",
+        "https://www.seroundtable.com/google-lsa-missed-subsequent-calls-41940.html"
+      ],
+      "checked_at": "2026-11-21T05:54:00Z",
+      "claim": "Google's current Local Services Help page lists a missed phone call during the advertiser's operating hours as a valid lead when the caller stays on the line for more than 20 seconds. If the call-receiving setup requires a keypress to route the caller, the timer starts after the first keypress and no charge applies if the caller never presses a key. A voicemail or automated greeting without a keypress is treated as a connected call and is charged if the caller stays more than 20 seconds. Operating hours are taken from the Google Business Profile; if the ad schedule differs, the call must fall within both windows. The same phone number or email is not charged again for follow-up calls/messages within 15 days after a lead is charged. Search Engine Land reported the policy effective date as October 1, 2026; the Google help page currently documents the rule but does not display that effective date.",
+      "why_now": "First capture in the repository of a directly relevant LSA billing rule. It changes the economic context for home-service advertisers: an unanswered call can become a paid lead before a callback is attempted. This is a first ledger capture, not a claim that the policy launched today.",
+      "observed_delta": "New first-party policy record: Google's current help page now explicitly documents the 20-second missed-call condition, IVR keypress exception, voicemail/greeting handling, operating-hours/ad-schedule intersection, and 15-day repeat-contact rule. No prior LSA billing-policy subject existed in the journal.",
+      "verification": "source_checked",
+      "evidence_level": "first_party",
+      "confidence": "high",
+      "value_type": "none",
+      "value": "No cash or credits. Potential cost-avoidance and lead-recovery value for LSA advertisers is unquantified; no avoided spend, recovered job value, or service price is established.",
+      "eligibility": "Google Local Services Ads advertisers. A missed call is described as a valid lead when it occurs during Google Business Profile operating hours and the caller stays on the line more than 20 seconds; if an ad schedule differs, the call must also fall within the active ad schedule. Account- and market-specific applicability should be confirmed in the advertiser's own LSA account.",
+      "friction": "Lead prices vary by location, job type, lead type and bidding mode; the help page gives no fixed missed-call price. The 20-second rule applies to unanswered calls, not calls answered after 20 seconds. IVR keypress and voicemail/greeting handling affect the timer. Follow-up contacts using the same phone/email are not charged again within 15 days after a lead is charged. A post-call text should not be assumed to prevent the initial missed-call lead charge.",
+      "deadline": null,
+      "next_check": "2026-12-05",
+      "buyer_signal": "none",
+      "stackability": [
+        "SECONDS MATTER",
+        "Google Local Services Ads advertisers",
+        "Live overflow and answer routing",
+        "Callback accountability",
+        "Lead billing audit"
+      ],
+      "score": 5,
+      "anti_leverage": "Do not claim every missed call is billable: the documented condition is more than 20 seconds during operating hours, with routing and schedule exceptions. Do not claim a text-back prevents the initial charge. Do not invent a dollar impact or assume every contractor uses LSA. A call answered after 20 seconds is evaluated as an answered call, not automatically charged based on ring time."
+    },
+    {
+      "id": "leadsmart-us-home-services-inbound-call-index-q3-2026",
+      "title": "Lead Smart Q3 index places 59% of connected home-service calls between 9am and 3pm Central",
+      "status": "NEW",
+      "source_url": "https://www.leadsmartinc.com/news/us-home-services-inbound-call-index-q3-2026",
+      "checked_at": "2026-11-21T05:54:00Z",
+      "claim": "Lead Smart says its Q3 2026 U.S. Home Services Inbound Call Index analyzes 163,748 connected homeowner calls delivered through its publisher network from July 1 through September 30, 2026. It reports 59% of calls arriving between 9am and 3pm Central, 82% between 8am and 5pm, and 85.9% on weekdays. HVAC represented 15.8% of connected calls, plumbing 15.1%, and roofing 6.8%. Its methodology counts only calls that connected to a home-service business and excludes unconnected, blocked and duplicate attempts. The dataset is the network's own traffic, not a representative census of all U.S. home-service calls.",
+      "why_now": "Adds a measured time-of-day distribution that can inform a low-cost pilot's coverage and callback test window. It is more actionable for scheduling than another undifferentiated missed-call headline.",
+      "observed_delta": "First capture of Lead Smart's Q3 call index and its methodology. The report provides network-specific connected-call timing, but explicitly excludes unconnected calls and therefore cannot establish a missed-call rate.",
+      "verification": "source_checked",
+      "evidence_level": "first_party",
+      "confidence": "medium",
+      "value_type": "none",
+      "value": "No cash or credits. The time-of-day distribution may inform pilot scheduling. Published pay-per-call amounts are affiliate-publisher payouts, not contractor revenue, customer lifetime value, or a SECONDS MATTER service-price benchmark.",
+      "eligibility": "Not a grant or product benefit. The dataset covers connected homeowner calls delivered through Lead Smart's U.S. home-service publisher network during Q3 2026.",
+      "friction": "Lead Smart is a pay-per-call and lead-generation network with a commercial interest in call demand. Its own network is not representative of every U.S. contractor. Unconnected, blocked and duplicate attempts are excluded, so the report cannot estimate missed-call frequency. Payouts vary by ZIP code and are publisher-side amounts.",
+      "deadline": null,
+      "next_check": "2027-01-15",
+      "buyer_signal": "none",
+      "stackability": [
+        "SECONDS MATTER",
+        "Pilot coverage schedule",
+        "HVAC and plumbing",
+        "Time-to-answer measurement"
+      ],
+      "score": 3,
+      "anti_leverage": "Do not say 59% of missed calls occur from 9am to 3pm or infer an unanswered-call rate. Do not treat publisher payouts as a contractor's revenue or a customer's job value. Use the report only to choose a provisional pilot coverage window, then validate against the customer's own call logs."
+    },
+    {
+      "id": "upwork-roofing-ghl-missed-call-12-profile-mismatch-2026-11",
+      "title": "Reject $12 roofing-company GHL follow-up listing as unverified end-buyer demand",
+      "status": "REJECTED",
+      "source_url": "https://www.upwork.com/freelance-jobs/apply/Need-GoHighLevel-Specialist-for-SMS-Email-Follow-and-Appointment-Booking_~022120213069823015575/",
+      "checked_at": "2026-11-21T05:54:00Z",
+      "claim": "An Upwork-indexed listing asks for GoHighLevel SMS/email follow-up, missed-call text-back and appointment booking for a stated Texas roofing company. It says roughly half of missed calls receive no follow-up and describes around 150 new leads per month; the advertised fixed budget is $12. The listing snapshot shows 20–50 proposals, one interview and a one-hire indicator. The associated public client profile displays Indonesia and Fashion & Beauty, which conflicts with the claimed Texas roofing-company identity. Direct page retrieval returned HTTP 403. No contract amount, funded milestone or settled payment is independently verified.",
+      "why_now": "A newly surfaced home-services missed-call listing initially resembles direct buyer demand, but the associated public profile conflicts with the stated end-customer identity. This resembles a previously captured profile-mismatch false positive and should not be counted as verified roofing-company demand.",
+      "observed_delta": "First capture of this listing as negative intelligence. The public profile mismatch lowers confidence in the claimed end buyer; the posting may be an agency or representative, but that relationship is not established.",
+      "verification": "needs_review",
+      "evidence_level": "secondary",
+      "confidence": "low",
+      "value_type": "proposed_revenue",
+      "value": "$12 advertised one-time fixed-price budget; no awarded contract value, funded milestone or settled payment verified. Not a service-price benchmark.",
+      "eligibility": "Remote worldwide listing for a GoHighLevel specialist. The actual end-client identity and the poster's authority to represent the stated Texas roofing company are unverified.",
+      "friction": "20–50 proposals, one interview and a one-hire indicator are shown in the index. Public profile country/industry conflicts with the stated roofing business. Direct page access returned HTTP 403. A one-hire indicator is not proof of a funded milestone or settled payment.",
+      "deadline": null,
+      "next_check": null,
+      "buyer_signal": "explicit_purchase_intent",
+      "stackability": [
+        "Negative intelligence",
+        "Upwork buyer-signal quality",
+        "Home-services automation"
+      ],
+      "score": 1,
+      "anti_leverage": "Do not count this as verified Texas roofing demand, a direct end-customer relationship, or a paid service-price benchmark. A profile mismatch is not proof of fraud; an agency or third-party representative is possible. Do not contact the account or infer payment from the hire indicator."
+    }
+  ]
+}

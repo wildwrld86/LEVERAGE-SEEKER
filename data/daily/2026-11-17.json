@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-17",
+  "observations": [
+    {
+      "id": "highlevel-lc-phone-messaging-quality-restrictions-2026-11",
+      "title": "HighLevel LC Phone quality safeguards can pause workflow SMS while native missed-call text-back continues",
+      "status": "NEW",
+      "source_url": "https://help.gohighlevel.com/support/solutions/articles/155000008745-lc-phone-messaging-quality-monitoring",
+      "checked_at": "2026-11-17T05:24:36Z",
+      "claim": "HighLevel's LC Phone Messaging Quality Monitoring article, modified November 10, 2026, says each sub-account is monitored for opt-out (STOP) rate and carrier-filtered message Error 30007 rate over a rolling seven-day window after at least 500 SMS. Thresholds differ for young accounts (under seven days of sending history) and mature accounts. When a restriction triggers, bulk, campaign and Workflow 'Send SMS' actions are paused; one-to-one replies in Conversations, native Missed Call Text Back (if configured), and RCS continue. The article says the improved first-restriction pause is 12 hours, with a 24-hour pause for relapse during the 72-hour monitoring period, but those improvements are rolling out only to selected sub-accounts; other accounts and newly created sub-accounts retain existing safeguards.",
+      "why_now": "The existing HighLevel record captured native missed-call text-back and repeat-call duplicate risk, but not the platform's message-quality restrictions. This adds a material failure mode for any SECONDS MATTER design that relies on workflow SMS after the initial acknowledgement.",
+      "verification": "source_checked",
+      "evidence_level": "first_party",
+      "confidence": "high",
+      "value_type": "none",
+      "value": "No cash or credits. This is an operational reliability and messaging-risk constraint; no quantified savings, customer recovery or revenue is established.",
+      "eligibility": "Applies to LC Phone sub-accounts once at least 500 SMS have been sent in a rolling seven-day window. The improved 12-hour safeguard is a phased rollout to selected sub-accounts; other sub-accounts and newly created sub-accounts retain existing safeguards. Account-specific rollout status is unknown.",
+      "friction": "STOP opt-outs and carrier filtering can pause bulk, campaign and Workflow Send SMS actions. Native Missed Call Text Back, one-to-one Conversations replies and RCS are documented to continue during the restriction. Manual review can keep automated sending paused until Support clears it; only an agency owner or admin can self-lift eligible temporary restrictions.",
+      "deadline": null,
+      "next_check": "2026-12-01",
+      "buyer_signal": "none",
+      "stackability": [
+        "HighLevel LC Phone",
+        "SECONDS MATTER",
+        "SMS consent and quality monitoring",
+        "Callback workflow resilience"
+      ],
+      "score": 4,
+      "observed_delta": "First ledger capture of HighLevel's documented SMS-quality restriction thresholds, affected workflow actions, exceptions and phased 12-hour safeguard rollout. This is not a claim that the feature launched on the check date.",
+      "anti_leverage": "Do not assume every account receives the 12-hour safeguard. Do not infer that all workflow SMS remains available because native Missed Call Text Back continues during a restriction. Keep consent, business identification and opt-out handling explicit; do not treat RCS as a compliance workaround."
+    }
+  ]
+}

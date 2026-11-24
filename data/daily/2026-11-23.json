@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-23",
+  "observations": [
+    {
+      "id": "cloudflare-workers-ai-model-retirements-2026-11-20",
+      "title": "Cloudflare Workers AI retired 24 model IDs on Nov 20; some suggested replacements require paid billing",
+      "status": "CLOSED",
+      "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-05-planned-model-deprecations/",
+      "checked_at": "2026-11-23T06:05:20Z",
+      "claim": "Cloudflare's Nov 5 first-party changelog says 24 Workers AI model IDs were retired on Nov 20, 2026; requests to them now return HTTP 410 Gone, error 5028. The date was moved from Nov 15 to Nov 20. The pricing page last updated Nov 18 retains 10,000 Neurons/day at no charge, but exceeding that requires Workers Paid; several recommended frontier replacements, including DeepSeek V4.1 Flash 1017 and GLM-5.3, require Workers Paid or prepaid AI Gateway credits. The earlier July 28 free-access example listing Nemotron 3 120B is superseded by its Nov 20 retirement.",
+      "why_now": "First post-deadline verification of the model retirement. It also reconciles a stale July 28 free-model example with the later November 5 retirement notice. No API call was made and no Cloudflare account entitlement is assumed.",
+      "verification": "source_checked",
+      "evidence_level": "first_party",
+      "confidence": "high",
+      "value_type": "none",
+      "value": "No cash or transferable credits. Workers Free includes 10,000 Neurons/day; usage above that requires Workers Paid and is billed at $0.011 per 1,000 Neurons. Some frontier models separately require paid billing or prepaid AI Gateway credits.",
+      "eligibility": "Developers invoking Workers AI model IDs. The daily Neuron allocation applies to Workers AI, but model-specific paid gates still apply. No account-specific entitlement or active workload is verified.",
+      "friction": "24 model IDs no longer return responses; pinned IDs must be replaced. Suggested replacements differ in price and plan eligibility. No live API test, model migration, or account access was performed.",
+      "deadline": "2026-11-20",
+      "next_check": "2026-12-07",
+      "buyer_signal": "none",
+      "stackability": [
+        "Workers AI",
+        "LLM evaluation",
+        "model fallback",
+        "LEVERAGE//SEEKER",
+        "near-$0 inference"
+      ],
+      "score": 3,
+      "supporting_source_urls": [
+        "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+        "https://developers.cloudflare.com/changelog/post/2026-07-28-models-require-workers-paid/"
+      ],
+      "observed_delta": "Confirms the November 20 retirement date has taken effect and records the documented 410 response. The later retirement supersedes the July 28 example that listed Nemotron 3 120B among free-access models; this is a terms/availability change, not a page-hash change.",
+      "anti_leverage": "Do not treat 10,000 Neurons/day as transferable credits or assume every suggested replacement is free. Model IDs and paid gates can change; no live runtime response or account entitlement was tested."
+    },
+    {
+      "id": "cloudflare-agents-createai-provider-deprecation-2026-10-21",
+      "title": "Cloudflare Agents SDK createAI replaces feature-frozen Workers AI provider packages",
+      "status": "NEW",
+      "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-21-createai/",
+      "checked_at": "2026-11-23T06:05:20Z",
+      "claim": "Cloudflare's Oct 21 changelog introduces Agents SDK createAI for the AI SDK and Pi AI. It unifies Workers AI model IDs, AI Gateway catalog models, dynamic routes and vendor AI SDK models through an AI binding or account ID/API token. Cloudflare marks workers-ai-provider and ai-gateway-provider feature-frozen and deprecated; createAI supports routing, fallbacks and BYOK.",
+      "why_now": "First capture in the durable journal of a provider-package migration that could affect a future Cloudflare-hosted agent/evaluation stack. No use of either deprecated package in the current repository was established, so this is readiness intelligence rather than an immediate migration task.",
+      "verification": "source_checked",
+      "evidence_level": "first_party",
+      "confidence": "high",
+      "value_type": "none",
+      "value": "No cash, credits or direct savings. Potential reduction in provider-adapter fragmentation for projects already using Cloudflare Agents SDK and AI SDK/Pi AI.",
+      "eligibility": "Developers using Cloudflare Agents SDK with the AI SDK or Pi AI. No account, deployment or package usage is assumed.",
+      "friction": "Requires installing/updating the Agents SDK and migrating provider imports/configuration; model routing, auth, fallback behavior and data handling still require testing. Cloudflare says migrate at convenience; no hard removal deadline is stated.",
+      "deadline": null,
+      "next_check": "2027-01-23",
+      "buyer_signal": "none",
+      "stackability": [
+        "Cloudflare Workers AI",
+        "AI Gateway",
+        "Agents SDK",
+        "AI SDK",
+        "agent routing"
+      ],
+      "score": 2,
+      "observed_delta": "Adds the Oct 21 first-party deprecation/migration notice to the ledger; the two older provider packages are feature-frozen, while createAI provides a unified entry point.",
+      "anti_leverage": "Do not migrate a project that does not use the deprecated packages. This is not a free-credit offer or evidence that the founder has an active Cloudflare AI deployment."
+    },
+    {
+      "id": "upwork-elevo-gk-trades-missed-call-automation-500-2026-11-22",
+      "title": "Elevo GK advertises a $500 fixed-price request for on-demand trades lead-response builds",
+      "status": "NEW",
+      "source_url": "https://www.upwork.com/freelance-jobs/apply/Build-speed-lead-missed-call-text-back-and-receptionist-automations-for-trades-businesses_~022124532715979996170/",
+      "checked_at": "2026-11-23T06:05:20Z",
+      "claim": "An Upwork search-index snapshot for a listing posted Nov 22 shows Elevo GK seeking a builder for US plumber, HVAC and roofing clients: speed-to-lead, missed-call text-back, after-hours/overflow AI receptionist, quote follow-up and optional calendar booking using GoHighLevel, Twilio, n8n or similar. The listing advertises $500 fixed price, shows 20–50 proposals and zero interviews, and says work is on-demand one client at a time with repeat work only if successful; it explicitly offers no guaranteed project. Direct page retrieval was unavailable; no award, milestone or payment is verified.",
+      "why_now": "New, narrowly relevant agency-fulfillment request surfaced after the Nov 22 posting date. It is a possible subcontracting/distribution channel for the existing SECONDS MATTER workflow, not proof of end-contractor demand or recurring revenue.",
+      "verification": "needs_review",
+      "evidence_level": "secondary",
+      "confidence": "low",
+      "value_type": "proposed_revenue",
+      "value": "$500 advertised fixed-price listing budget for the posted task. It is not a verified per-client rate, recurring subscription, award or settled payment; repeat work is conditional and not guaranteed.",
+      "eligibility": "Worldwide remote listing at intermediate level. The requester asks for examples of completed service-business automation and a proposed fixed price, timeline and monthly tool costs. Founder qualifications are not established.",
+      "friction": "20–50 proposals and zero interviews in the search snapshot; direct page retrieval was disabled. The buyer is an agency intermediary that sells to contractors, not the end-service business. No guaranteed project volume, telecom budget or client access is established.",
+      "deadline": null,
+      "next_check": "2026-11-26",
+      "buyer_signal": "explicit_purchase_intent",
+      "stackability": [
+        "SECONDS MATTER",
+        "GoHighLevel",
+        "n8n",
+        "Twilio",
+        "home services",
+        "agency fulfillment channel"
+      ],
+      "score": 2,
+      "observed_delta": "First capture of a Nov 22 agency listing whose requested deliverables closely match the existing missed-call/speed-to-lead workflow. Search-index evidence is retained as needs_review because the listing could not be directly retrieved.",
+      "anti_leverage": "Do not treat $500 as a per-client price or realized revenue. This is an agency's advertised fixed-price budget with no guaranteed repeat work, no verified award and no payment evidence."
+    }
+  ]
+}

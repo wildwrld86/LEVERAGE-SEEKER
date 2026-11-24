@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-03",
+  "observations": [
+    {
+      "id": "cloudflare-ai-search-usage-billing-2026-11-01",
+      "title": "Cloudflare postpones AI Search billing to December 1 and slows default sync",
+      "status": "CHANGED",
+      "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-02-billing-postponed-default-sync-interval/",
+      "checked_at": "2026-11-03T05:46:12Z",
+      "claim": "Cloudflare's November 2, 2026 first-party changelog postpones AI Search usage billing from November 1 to December 1, 2026. It states AI Search usage will not be charged before December 1 and published rates/included allowances remain unchanged. Default instance sync interval changes from 6 hours to 24 hours; supported custom intervals range from 15 minutes to 24 hours.",
+      "why_now": "Directly contradicts the previously recorded November 1 billing-start date for this same subject, and materially changes default source freshness. The earlier entry remains immutable as historical evidence; this is a verified terms change, not a source-hash change. No active founder AI Search instance or billing exposure is established.",
+      "verification": "source_checked",
+      "evidence_level": "first_party",
+      "confidence": "high",
+      "value_type": "cost_saving",
+      "value": "One additional month before AI Search usage charges begin (December 1); no cash or guaranteed savings, and no waiver of separately billed Cloudflare or third-party services. Reduced default sync frequency can lower freshness for time-sensitive alerts.",
+      "eligibility": "Cloudflare AI Search users on Workers Free or Paid plans. Account-specific instances, limits and billing settings are unverified.",
+      "friction": "Review any instance's configured sync interval if relying on sub-24-hour updates. More frequent syncs may consume usage allowances and later incur charges; other model/generation services can bill separately. No activation or migration is needed for this research project.",
+      "deadline": "2026-12-01",
+      "next_check": "2026-11-29",
+      "buyer_signal": "none",
+      "stackability": [
+        "Cloudflare AI Search",
+        "Source freshness monitoring",
+        "Future verified opportunity feed"
+      ],
+      "score": 3
+    }
+  ]
+}
