@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-24",
+  "observations": [
+    {
+      "id": "cloudflare-workers-durable-objects-spend-limits-2026-11-13",
+      "title": "Cloudflare adds account-wide spending limits for Workers and Durable Objects",
+      "status": "NEW",
+      "source_url": "https://developers.cloudflare.com/billing/manage/spend-management/",
+      "supporting_source_urls": [
+        "https://developers.cloudflare.com/changelog/product-group/developer-platform/2/"
+      ],
+      "checked_at": "2026-11-24T05:46:32Z",
+      "claim": "Cloudflare's Nov 13, 2026 first-party billing guide documents product-wide spending limits and email alerts for Workers and Durable Objects. A spending limit blocks supported operations when the threshold takes effect; an email alert alone does not stop usage. Workers limits count request and CPU charges after included usage but exclude the Workers Paid subscription fee and other products. Durable Objects limits count requests, duration, SQLite rows and KV operations but exclude stored data and the shared Workers Paid fee. Limits do not cover Workers AI, KV, R2 or other products. Reporting and enforcement delays can allow charges to exceed the limit, and stored-data charges can continue while Durable Objects are paused.",
+      "why_now": "First capture of a new first-party cost-control capability relevant to a near-$0 Cloudflare stack. It can reduce surprise usage, but it is not a guaranteed invoice cap and no account setting was changed.",
+      "observed_delta": "Adds an optional usage-blocking guardrail for Workers and Durable Objects, distinct from alert-only budget notifications. The scope exclusions and delayed enforcement are material anti-leverage conditions.",
+      "verification": "source_checked",
+      "evidence_level": "first_party",
+      "confidence": "high",
+      "value_type": "cost_saving",
+      "value": "No cash or credits. A configured product-level limit can block supported Workers or Durable Objects operations after a threshold, potentially limiting future usage charges. It does not cap the invoice or cover the Workers Paid subscription and other products.",
+      "eligibility": "Cloudflare accounts using Workers and/or Durable Objects; dashboard configuration requires permission to edit billing settings. Plan-specific availability and this owner's account entitlement were not tested.",
+      "friction": "Separate account-wide limits for Workers and Durable Objects; not per Worker or namespace. Workers AI, KV, R2 and other products are excluded. Workers Paid subscription fees are excluded. Durable Objects stored-data charges can continue while paused. Metering/enforcement delays can exceed the threshold. Blocking can interrupt every application using the affected product. Email-only alerts do not stop usage and require a configured notification recipient.",
+      "deadline": null,
+      "next_check": "2026-12-24",
+      "buyer_signal": "none",
+      "stackability": [
+        "Cloudflare Workers",
+        "Durable Objects",
+        "AI Gateway spend limits",
+        "near-$0 infrastructure",
+        "cost guardrails"
+      ],
+      "score": 4,
+      "anti_leverage": "Do not describe the threshold as a hard invoice cap. It does not cover Workers AI, KV, R2, subscriptions or all app dependencies; a block can create downtime and delayed enforcement can permit overage. No account setting or plan entitlement was tested."
+    },
+    {
+      "id": "cloudflare-ai-search-file-summary-billing-2026-11-17",
+      "title": "Cloudflare AI Search file summaries add separately billed Workers AI calls",
+      "status": "NEW",
+      "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-17-file-summaries/",
+      "supporting_source_urls": [
+        "https://developers.cloudflare.com/ai-search/configuration/data-source/",
+        "https://developers.cloudflare.com/ai-search/platform/limits-pricing/"
+      ],
+      "checked_at": "2026-11-24T05:46:32Z",
+      "claim": "Cloudflare's Nov 17, 2026 first-party changelog adds optional AI Search summaries, topics and keywords for text documents that produce at least three chunks. File summaries are off by default; enabling indexing_options.file_summary triggers a full reindex. Summary calls use a Workers AI text-generation model through the instance's AI Gateway or the default gateway and are billed as Workers AI usage outside the AI Search ingestion allotment. Each new or modified eligible file is summarized once. Updating indexing_options replaces the whole object, so omitted settings revert to defaults.",
+      "why_now": "First capture of a separate model-usage cost attached to a potentially relevant future searchable opportunity feed. The default-off state and full-reindex behavior matter more than the feature's retrieval benefit for a near-$0 build.",
+      "observed_delta": "Adds an optional summarization path with separate Workers AI billing, reindex cost/time and configuration-replacement behavior. No AI Search instance or summary setting is assumed.",
+      "verification": "source_checked",
+      "evidence_level": "first_party",
+      "confidence": "high",
+      "value_type": "none",
+      "value": "No cash or credits. Summaries may add retrieval metadata, but model calls are billed separately as Workers AI usage; exact per-file cost depends on model and token use and is not stated as a fixed price in the changelog.",
+      "eligibility": "Cloudflare AI Search instances with eligible text documents producing at least three chunks. No account-specific plan entitlement or active instance was tested.",
+      "friction": "Off by default. Enabling triggers a full reindex. Every new or modified eligible file incurs a model call billed outside the AI Search ingestion allotment. Smaller chunk sizes make more files eligible. The context metadata can add up to 1,000 characters to retrieved content and increase later generation tokens. Updating indexing_options replaces the full object and omitted settings revert to defaults.",
+      "deadline": null,
+      "next_check": "2026-12-03",
+      "buyer_signal": "none",
+      "stackability": [
+        "Cloudflare AI Search",
+        "Workers AI",
+        "AI Gateway",
+        "future verified opportunity feed",
+        "cost control"
+      ],
+      "score": 4,
+      "anti_leverage": "Do not assume file summaries are included in AI Search's ingestion allowance or free. Leave the feature off unless retrieval tests justify its incremental model cost; preserve all indexing_options when updating configuration."
+    },
+    {
+      "id": "twilio-us-sms-optional-addons-cost-2026-11",
+      "title": "Twilio lists optional SMS add-ons at $0.015 per outbound message and traffic optimization from $300 monthly",
+      "status": "NEW",
+      "source_url": "https://www.twilio.com/en-us/sms/pricing/us",
+      "checked_at": "2026-11-24T05:46:32Z",
+      "claim": "Twilio's US SMS pricing page, marked current as of November 2026, lists the optional Engagement Suite (link shortening, click tracking and scheduling) at $0.015 per outbound SMS, with the first 1,000 free monthly. The optional Compliance Toolkit is listed at $0.015 per outbound SMS. Traffic Optimization Engine starts at $300/month. These add-ons are separate from the $0.0083 base SMS segment rate and carrier pass-through fees; they are not required for basic SMS delivery. No add-on was enabled and no Twilio account usage was tested.",
+      "why_now": "First capture of optional feature costs missing from the existing SECONDS MATTER Twilio base-rate ledger. These add-ons can cost more per message than the base segment and should not silently enter a low-volume pilot budget.",
+      "observed_delta": "Adds three optional cost lines: Engagement Suite, Compliance Toolkit and Traffic Optimization Engine. This is a newly recorded cost baseline, not evidence that Twilio changed its pricing on this date.",
+      "verification": "source_checked",
+      "evidence_level": "first_party",
+      "confidence": "high",
+      "value_type": "none",
+      "value": "No cash or credits. Engagement Suite includes the first 1,000 outbound messages monthly, then costs $0.015 per outbound message; Compliance Toolkit is $0.015 per outbound message; Traffic Optimization Engine starts at $300/month. Avoiding unnecessary add-ons preserves unit margin.",
+      "eligibility": "Twilio messaging customers who choose to enable the respective optional features. No account, feature activation or production registration is assumed.",
+      "friction": "Per-outbound add-on charges can exceed the base $0.0083 segment rate. The 1,000-message monthly allowance applies to Engagement Suite only, not the Compliance Toolkit. Traffic Optimization Engine begins at $300/month. Base SMS, carrier pass-through, number rent and A2P costs remain separate. Do not apply these Twilio prices to HighLevel LC Phone.",
+      "deadline": null,
+      "next_check": "2026-12-15",
+      "buyer_signal": "none",
+      "stackability": [
+        "SECONDS MATTER",
+        "Twilio",
+        "US SMS unit economics",
+        "telecom cost floor",
+        "customer-owned telecom"
+      ],
+      "score": 4,
+      "anti_leverage": "Do not assume these features are mandatory or include them in the base service cost. Do not apply the Engagement Suite free allowance to the Compliance Toolkit. The $300/month optimization product is not justified for a small pilot without measured throughput needs."
+    },
+    {
+      "id": "github-actions-workflow-lockfiles",
+      "title": "GitHub workflow lockfile plan eligibility remains inconsistent across official pages",
+      "status": "WATCH",
+      "source_url": "https://github.blog/changelog/2026-10-28-github-actions-workflow-lockfiles-are-generally-available/",
+      "supporting_source_urls": [
+        "https://docs.github.com/en/actions/how-tos/secure-your-work/lock-workflow-dependencies",
+        "https://docs.github.com/en/actions/concepts/security/workflow-dependency-lockfiles"
+      ],
+      "checked_at": "2026-11-24T05:46:32Z",
+      "claim": "The Oct 28, 2026 GitHub GA announcement says Actions workflow dependency lockfiles are available on Free, Team, Enterprise Cloud and Enterprise Cloud with data residency. The current step-by-step GitHub Docs page still labels the feature's 'Who can use this feature?' as GitHub Enterprise Cloud only, while the concept page describes lockfile behavior without a plan list. The official documentation conflict remains visible; no plan-level or repository-level entitlement test was performed.",
+      "why_now": "Scheduled recheck of the overdue eligibility discrepancy. The two first-party pages still disagree, so the subject remains WATCH rather than being resolved by selecting one page.",
+      "observed_delta": "Confirms the GA announcement and how-to page still publish conflicting plan eligibility. This is a recheck of the same subject, not a new feature or a claim that Free/Team access has been tested.",
+      "verification": "source_checked",
+      "evidence_level": "first_party",
+      "confidence": "high",
+      "value_type": "none",
+      "value": "No cash or credits. If available, lockfiles can improve GitHub Actions dependency integrity by pinning direct and transitive actions to reviewed commits.",
+      "eligibility": "GA announcement lists GitHub Free, Team and Enterprise Cloud variants; the how-to page says Enterprise Cloud only. Actual access for this repository and account remains unresolved.",
+      "friction": "Official pages conflict. Setup requires repository write access and the gh-actions-lock CLI extension; the extension was not installed and no lockfile was generated. A lockfile does not prove that a dependency is safe.",
+      "deadline": null,
+      "next_check": "2026-12-08",
+      "buyer_signal": "none",
+      "stackability": [
+        "GitHub Actions",
+        "supply-chain security",
+        "LEVERAGE//SEEKER",
+        "CI reliability"
+      ],
+      "score": 3,
+      "anti_leverage": "Do not claim Free/Team eligibility as tested or generate a lockfile until the entitlement and extension behavior are confirmed in the actual repository. Locking pins code but does not replace dependency review."
+    },
+    {
+      "id": "upwork-home-service-agency-ghl-paid-test-500-2026-11-15",
+      "title": "Recheck blocked: exact $500 home-services agency GHL paid-test listing remains inaccessible",
+      "status": "BLOCKED",
+      "source_url": "https://www.upwork.com/freelance-jobs/apply/GoHighLevel-Automation-Specialist-for-Home-Service-Agency_~022121961123935058893/",
+      "checked_at": "2026-11-24T05:46:32Z",
+      "claim": "Scheduled recheck on Nov 24, 2026: direct retrieval of the exact Upwork listing returned HTTP 403, and exact title/ID searches did not surface an independent current snapshot. Its current open/closed state, interviews, award, funded milestone and payment cannot be verified. Retain BLOCKED, not CLOSED; no contact or application occurred.",
+      "why_now": "The prior record's next_check date was Nov 24. This recheck preserves the unresolved state rather than inferring closure or payment from a missing search result.",
+      "observed_delta": "No new job-specific outcome. The listing remains BLOCKED and the next recheck moves to Dec 1, 2026. Missing search results and HTTP 403 are not evidence that the job closed.",
+      "verification": "needs_review",
+      "evidence_level": "secondary",
+      "confidence": "low",
+      "value_type": "unknown",
+      "value": "The original listing advertised a $500 fixed-price paid test; current funding, award and settled payment are unverified.",
+      "eligibility": "Original remote home-services agency GoHighLevel implementation listing; current buyer/client status cannot be independently confirmed.",
+      "friction": "Upwork direct retrieval returned HTTP 403 and exact-title/ID search did not resurface the listing. No job-specific milestone, interview or payment evidence is available. No contact or application occurred.",
+      "deadline": null,
+      "next_check": "2026-12-01",
+      "buyer_signal": "none",
+      "stackability": [
+        "SECONDS MATTER",
+        "GoHighLevel",
+        "agency fulfillment",
+        "negative intelligence",
+        "buyer-signal calibration"
+      ],
+      "score": 1,
+      "anti_leverage": "Do not mark CLOSED, completed or paid. Do not treat the original $500 advertised budget as cash, a contract award or validated recurring demand. The earlier explicit hiring intent remains historical, not a current verified buyer signal."
+    }
+  ]
+}
